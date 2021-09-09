@@ -125,7 +125,9 @@
     height: 32px;
     fill: $footer-icons-hover;
   }
-
+  &__contacts-link:focus .footer__icons {
+    fill: $footer-icons-hover;
+  }
   &__contacts-item:not(:last-child) {
     margin-right: 28px;
     @media screen and (min-width: 772px) {
