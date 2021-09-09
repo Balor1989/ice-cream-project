@@ -1,6 +1,6 @@
 .contacts-section {
   padding-top: 86px;
-  background-color: #fff5f6;
+  background-image: linear-gradient(#ffffff 170px, #fff5f6 0);
   &__box {
     max-width: 320px;
     padding-left: 15px;
@@ -26,6 +26,8 @@
   }
   &__title-section {
     padding-top: 43px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
   }
   &__overhead {
     display: inline-block;
@@ -36,5 +38,8 @@
   }
   &__overhead--another {
     background-color: #c2e297;
+  }
+  &__city {
+    margin-bottom: 25px;
   }
 }
