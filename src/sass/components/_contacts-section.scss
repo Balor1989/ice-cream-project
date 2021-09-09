@@ -12,6 +12,30 @@
     visibility: hidden;
     max-height: 0;
   }
+  &__btn-box {
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__location-btn {
+    width: 162px;
+    border: none;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    background-color: #d41342;
+  }
+  &__franchise-btn {
+    width: 162px;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+
+    background-color: #ffffff;
+  }
 }
 .card-box {
   padding-left: 35px;
@@ -24,6 +48,12 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
   }
+  &__card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__card:last-child {
+    margin-bottom: 54px;
+  }
   &__title-section {
     padding-top: 43px;
     padding-bottom: 25px;
@@ -33,13 +63,39 @@
     display: inline-block;
     padding: 2px 30px;
     margin-bottom: 25px;
-    background-color: #f0d1a5;
     border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    color: #ffffff;
+    background-color: #f0d1a5;
   }
   &__overhead--another {
     background-color: #c2e297;
   }
   &__city {
     margin-bottom: 25px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+  }
+  &__work-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__work:first-child {
+    margin-bottom: 10px;
+  }
+  &__contacts {
+    padding-top: 25px;
+    padding-bottom: 43px;
   }
 }
