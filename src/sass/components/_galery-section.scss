@@ -1,80 +1,107 @@
-.galery-section__image {
-  border-radius: 10px;
+.galery-section__box {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 320px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .galery-section__box {
   position: relative;
-  height: 480px;
+  height: 122px;
+  background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+
+  @media screen and (min-width: 768px) {
+    height: 264px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 430px;
+  }
 }
 
-.galery-section__image1 {
+.galery-section__image {
   position: absolute;
-  top: 141px;
-  left: 134px;
-  border-radius: 20px;
-  width: 139px;
+  border-radius: 5px;
+  width: 40px;
+
+  @media screen and(min-width:768px) {
+    width: 86px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 140px;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 20px;
+  }
 }
 
-.galery-section__image2 {
-  position: absolute;
-  top: 86px;
-  left: 279px;
-  border-radius: 20px;
-  width: 139px;
+.img1 {
+  top: 40px;
+  left: 20px;
 }
-.galery-section__image3 {
-  position: absolute;
-  top: 231px;
-  left: 279px;
-  border-radius: 20px;
-  width: 139px;
+
+.img2 {
+  top: 24px;
+  left: 62px;
 }
-.galery-section__image4 {
-  position: absolute;
+.img3 {
+  top: 66px;
+  left: 62px;
+}
+
+.img4 {
   top: 0;
-  left: 424px;
-  border-radius: 20px;
-  width: 285px;
+  left: 104px;
+  width: 80px;
+
+  @media screen and(min-width:768px) {
+    width: 176px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 284px;
+  }
 }
-.galery-section__image5 {
-  position: absolute;
-  top: 292px;
-  left: 424px;
-  border-radius: 20px;
-  width: 139px;
+
+.img5 {
+  top: 82px;
+  left: 104px;
 }
-.galery-section__image6 {
-  position: absolute;
-  top: 86px;
-  left: 715px;
-  border-radius: 20px;
-  width: 139px;
+
+.img6 {
+  top: 28px;
+  left: 186px;
 }
-.galery-section__image7 {
-  position: absolute;
-  top: 231px;
-  left: 715px;
-  border-radius: 20px;
-  width: 139px;
+
+.img7 {
+  top: 70px;
+  left: 186px;
 }
-.galery-section__image8 {
-  position: absolute;
-  top: 52px;
-  left: 860px;
-  border-radius: 20px;
-  width: 139px;
+
+.img8 {
+  top: 14px;
+  left: 228px;
 }
-.galery-section__image9 {
-  position: absolute;
-  top: 197px;
-  left: 860px;
-  border-radius: 20px;
-  width: 139px;
+
+.img9 {
+  top: 56px;
+  left: 228px;
 }
-.galery-section__image10 {
-  position: absolute;
-  top: 152px;
-  left: 1004px;
-  border-radius: 20px;
-  width: 139px;
+
+.img10 {
+  top: 44px;
+  left: 270px;
 }
