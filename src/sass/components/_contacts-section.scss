@@ -34,12 +34,11 @@
 
     color: #ffffff;
     background-color: #d41342;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__location-btn:hover,
   &__location-btn:focus {
-    color: #d41342;
-    background-color: transparent;
+    background-color: #c7133e;
   }
   &__franchise-btn {
     width: 162px;
@@ -55,12 +54,11 @@
 
     color: #d41443;
     background-color: #ffffff;
-    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__franchise-btn:hover,
   &__franchise-btn:focus {
-    color: #d41443;
-    background-color: transparent;
+    background-color: #ecebeb;
   }
 }
 .card-box {
