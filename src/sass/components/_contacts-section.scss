@@ -1,0 +1,14 @@
+.contacts-section {
+  padding-top: 86px;
+  &__box {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    visibility: hidden;
+    max-height: 0;
+  }
+}
