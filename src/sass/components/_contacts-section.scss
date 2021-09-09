@@ -1,5 +1,6 @@
 .contacts-section {
   padding-top: 86px;
+  background-color: #fff5f6;
   &__box {
     max-width: 320px;
     padding-left: 15px;
@@ -10,5 +11,30 @@
   &__title {
     visibility: hidden;
     max-height: 0;
+  }
+}
+.card-box {
+  padding-left: 35px;
+  padding-right: 35px;
+  &__card {
+    max-width: 220px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+  &__title-section {
+    padding-top: 43px;
+  }
+  &__overhead {
+    display: inline-block;
+    padding: 2px 30px;
+    margin-bottom: 25px;
+    background-color: #f0d1a5;
+    border-radius: 4px;
+  }
+  &__overhead--another {
+    background-color: #c2e297;
   }
 }
