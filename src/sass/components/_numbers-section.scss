@@ -1,0 +1,121 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100vw;
+  background-color: #fff5f6;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+/*.list {
+  list-style: none;
+}*/
+.advantages__primary-title {
+  margin: 0;
+  visibility: hidden;
+}
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    //justify-content: space-between;
+    //margin: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+    justify-content: space-between;
+  }
+}
+.advantages__item {
+  display: block;
+  width: 230px;
+  height: 156px;
+  margin-bottom: 38px;
+  //padding-right: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    // width: calc((100% - 6 * 30px) / 3);
+    height: 226px;
+    margin: 0;
+    margin: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    //width: calc((100% - 6 * 15px) / 3);
+    width: 330px;
+    height: 222px;
+    padding-right: 50px;
+    margin: 15px;
+  }
+}
+.advantages__title {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #d41443;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-top: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-top: 40px;
+  }
+}
+.advantages__item--milk::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+}
+.advantages__item--fruits::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.advantages__item--heart::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+}
+
+.advantages__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 170%;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 174%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
