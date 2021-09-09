@@ -1,0 +1,100 @@
+.footer {
+  //   max-width: 1600px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding-left: 15px;
+  //   padding-right: 15px;
+  padding-top: 113px;
+  background: $color-footer;
+
+  &__box {
+    min-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-family: Titan One;
+    font-weight: 400;
+    color: $title-color-first;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    width: 232px;
+  }
+  &__title-end {
+    margin-top: 17px;
+    font-family: Titan One;
+    font-weight: 400;
+    color: $title-color-second;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  &__contacts-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 45px;
+  }
+  &__contacts-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 44px;
+  }
+
+  &__icons {
+    width: 32px;
+    height: 32px;
+    fill: $footer-icons;
+  }
+  &__icons:hover {
+    width: 32px;
+    height: 32px;
+    fill: $footer-icons-hover;
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-right: 28px;
+  }
+  &__contacts-text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.8;
+    color: $footer-contact-text;
+  }
+
+  &__contacts-tel {
+    text-decoration: none;
+    color: $footer-contact;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 1.8;
+    padding-bottom: 43px;
+  }
+  &__copyright {
+    color: $footer-copyright;
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+  &__copyright-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  &__copyright-second-part {
+    margin-top: 2px;
+  }
+}

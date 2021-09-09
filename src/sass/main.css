@@ -12,7 +12,15 @@ html {
 body {
   font-family: 'DM sans', sans-serif;
   color: #000000;
-  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 ul {
@@ -29,5 +37,326 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.review-section__description {
+  background-color: #fafafa;
+}
+
+.contacts-section {
+  padding-top: 86px;
+  background-image: linear-gradient(#ffffff 170px, #fff5f6 0);
+}
+
+.contacts-section__box {
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts-section__title {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.contacts-section__btn-box {
+  padding-left: 35px;
+  padding-right: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-section__location-btn {
+  width: 162px;
+  border: none;
+  border-radius: 22px;
+  margin-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #ffffff;
+  background-color: #d41342;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-section__location-btn:hover, .contacts-section__location-btn:focus {
+  background-color: #c7133e;
+}
+
+.contacts-section__franchise-btn {
+  width: 162px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: #d41443;
+  background-color: #ffffff;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-section__franchise-btn:hover, .contacts-section__franchise-btn:focus {
+  background-color: #ecebeb;
+}
+
+.card-box {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.card-box__card {
+  max-width: 220px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.card-box__card:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.card-box__card:last-child {
+  margin-bottom: 54px;
+}
+
+.card-box__title-section {
+  padding-top: 43px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.card-box__overhead {
+  display: inline-block;
+  padding: 2px 30px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #f0d1a5;
+}
+
+.card-box__overhead--another {
+  background-color: #c2e297;
+}
+
+.card-box__city {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.card-box__city-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.card-box__work-section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.card-box__work:first-child {
+  margin-bottom: 10px;
+}
+
+.card-box__work-day {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000000;
+}
+
+.card-box__work-time {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
+}
+
+.card-box__contacts {
+  padding-top: 25px;
+  padding-bottom: 43px;
+}
+
+.card-box__link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #907e82;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-box__link:hover, .card-box__link:focus {
+  color: #d41443;
+}
+
+.footer {
+  padding-top: 113px;
+  background: #fff5f6;
+}
+
+.footer__box {
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__box {
+    width: 480px;
+  }
+}
+
+.footer__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Titan One;
+  font-weight: 400;
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  width: 232px;
+}
+
+.footer__title-end {
+  margin-top: 17px;
+  font-family: Titan One;
+  font-weight: 400;
+  color: #d41443;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.footer__contacts-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 45px;
+}
+
+.footer__contacts-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 44px;
+}
+
+.footer__icons {
+  width: 32px;
+  height: 32px;
+  fill: #fea5bb;
+}
+
+.footer__icons:hover {
+  width: 32px;
+  height: 32px;
+  fill: #d41443;
+}
+
+.footer__contacts-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.footer__contacts-text {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #000000;
+}
+
+.footer__contacts-tel {
+  text-decoration: none;
+  color: #d41443;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.8;
+  padding-bottom: 43px;
+}
+
+.footer__copyright {
+  color: #907e82;
+  padding-top: 22px;
+  padding-bottom: 25px;
+}
+
+.footer__copyright-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer__copyright-second-part {
+  margin-top: 2px;
 }
 /*# sourceMappingURL=main.css.map */
