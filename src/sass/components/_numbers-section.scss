@@ -87,6 +87,8 @@
   width: 33px;
   height: 50px;
   background-image: url(/src/images/icon1.png);
+  @media screen {
+  }
 }
 .advantages__item--fruits::before {
   content: '';
