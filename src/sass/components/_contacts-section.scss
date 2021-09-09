@@ -27,6 +27,9 @@
     }
   }
   &__location-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 162px;
     border: none;
     border-radius: 22px;
@@ -55,6 +58,9 @@
     background-color: #c7133e;
   }
   &__franchise-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 162px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -77,6 +83,26 @@
   &__franchise-btn:hover,
   &__franchise-btn:focus {
     background-color: #ecebeb;
+  }
+  &__location-icon {
+    margin-left: 14px;
+    width: 10px;
+    height: 10px;
+    fill: #ffffff;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__location-btn:hover .contacts-section__location-icon,
+  &__location-btn:focus .contacts-section__location-icon,
+  &__franchise-btn:hover .contacts-section__franchise-icon,
+  &__franchise-btn:focus .contacts-section__franchise-icon {
+    transform: rotate(-90deg);
+  }
+  &__franchise-icon {
+    margin-left: 14px;
+    width: 10px;
+    height: 10px;
+    fill: #d41443;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 .card-box {
