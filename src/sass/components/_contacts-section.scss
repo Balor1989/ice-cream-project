@@ -140,6 +140,9 @@
 
     background-color: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    @media screen and (min-width: 1200px) {
+      max-width: 330px;
+    }
   }
   &__card:not(:last-child) {
     @media screen and (max-width: 767px) {
@@ -192,6 +195,10 @@
       font-size: 14px;
       line-height: 1.85;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.87;
+    }
   }
   &__city-text {
     font-weight: 500;
@@ -202,6 +209,10 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.64;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.81;
     }
   }
   &__work-section {
@@ -222,6 +233,10 @@
       font-size: 14px;
       line-height: 1.85;
     }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.87;
+    }
   }
   &__work-time {
     font-weight: 500;
@@ -232,6 +247,10 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.85;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.87;
     }
   }
   &__contacts {
@@ -252,6 +271,10 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.85;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.81;
     }
   }
   &__link:hover,
