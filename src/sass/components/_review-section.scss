@@ -18,6 +18,8 @@
 
 .review-section__image {
   margin-bottom: 29px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .review-section__description {
   display: flex;
@@ -47,9 +49,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 
-.review-section__description::after {
+.review-section__description::before {
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -57,4 +61,34 @@
 
   content: '';
   background-color: rgba(199, 19, 62, 1);
+}
+
+.slider {
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-arrow {
+  font-size: 20px;
+  color: red;
+  z-index: 10;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+.slick-dots li button:before {
+  font-size: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #d31342;
 }
