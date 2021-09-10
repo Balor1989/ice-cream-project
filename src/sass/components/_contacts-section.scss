@@ -95,7 +95,7 @@
   &__location-btn:focus .contacts-section__location-icon,
   &__franchise-btn:hover .contacts-section__franchise-icon,
   &__franchise-btn:focus .contacts-section__franchise-icon {
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
   }
   &__franchise-icon {
     margin-left: 14px;
