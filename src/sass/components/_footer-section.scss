@@ -40,7 +40,7 @@
       justify-content: space-between;
     }
     @media screen and (min-width: 1280px) {
-      width: 1060px;
+      width: 1200px;
     }
   }
   &__title {
@@ -121,10 +121,10 @@
     }
   }
   &__icons:hover {
-    fill: $footer-icons-hover;
+    fill: $icons-hover;
   }
   &__contacts-link:focus .footer__icons {
-    fill: $footer-icons-hover;
+    fill: $icons-hover;
   }
   &__contacts-item:not(:last-child) {
     margin-right: 28px;
