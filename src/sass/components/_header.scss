@@ -1,0 +1,60 @@
+.header{
+    background-color: $breand-color;
+}
+
+.nav-section__logo{
+    margin: 0px;
+    padding-top: 6px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: $tablet) {
+        padding-top: 37px;
+    }
+}
+
+.nav-section{
+    position: relative;
+}
+
+.nav-section__btn-box{
+    .nav-section__btn-modal{
+        display: none;
+        @media screen and (min-width: $tablet) {
+            display: block;
+        }
+    }
+}
+
+.nav-section__site-nav{
+    @media screen and(max-width: $tablet) {
+        display: none;
+    }
+}
+
+.hero-title{
+    position: absolute;
+    z-index: 30;
+    top: 193px;
+    font-family: Titan One;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.145;
+    color: #fff;
+    & p {
+        font-size: 48px;
+        color: $accent-colot;
+    }
+}
+
+.circle{
+height: 345px;
+width: 345px;
+background-color: #FFA5BA;
+border-radius: 50%;
+position: absolute;
+z-index: 2;
+top: 83px;
+transform: translateX(36px);
+}
+
+
