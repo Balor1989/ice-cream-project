@@ -1,12 +1,29 @@
 .contacts-section {
   padding-top: 86px;
   background-image: linear-gradient(#ffffff 170px, #fff5f6 0);
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/contacts-background-1x.png),
+      linear-gradient(#ffffff 170px, #fff5f6 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts-background-2x.png),
+        linear-gradient(#ffffff 170px, #fff5f6 0);
+    }
+  }
+
   &__box {
     min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
   &__title {
     visibility: hidden;
