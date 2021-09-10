@@ -86,23 +86,21 @@
   display: block;
   width: 33px;
   height: 50px;
-  background-image: url(/src/images/icon1.png);
-  @media screen {
-  }
+  background-image: url(../images/icon1.png);
 }
 .advantages__item--fruits::before {
   content: '';
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url(/src/images/icon2.png);
+  background-image: url(../images/icon2.png);
 }
 .advantages__item--heart::before {
   content: '';
   display: block;
   width: 44px;
   height: 50px;
-  background-image: url(/src/images/icon3.png);
+  background-image: url(../images/icon3.png);
 }
 
 .advantages__text {
