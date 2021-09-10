@@ -3,16 +3,18 @@
   background-image: linear-gradient(#ffffff 170px, #fff5f6 0);
   @media screen and (min-width: 768px) {
     padding-top: 119px;
+    background-image: linear-gradient(#ffffff 203px, #fff5f6 0);
   }
   @media screen and (min-width: 1200px) {
     padding-top: 132px;
     background-image: url(../images/contacts-background-1x.png),
-      linear-gradient(#ffffff 170px, #fff5f6 0);
-    background-position: center;
+      linear-gradient(#ffffff 230px, #fff5f6 0);
+    background-position-y: center;
+    background-size: contain;
     background-repeat: no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts-background-2x.png),
-        linear-gradient(#ffffff 170px, #fff5f6 0);
+        linear-gradient(#ffffff 230px, #fff5f6 0);
     }
   }
 
