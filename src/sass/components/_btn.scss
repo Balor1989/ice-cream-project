@@ -1,0 +1,19 @@
+.nav-section__btn-modal{
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: $accent-colot;
+    justify-content: center;
+    align-items: center;
+    border: inherit;
+    height: 44px;
+    width: 200px;
+    border-radius: 22px;
+    @media screen and (min-width: $tablet) {
+        width: 186px;
+        .nav-section__btn-box & {
+            width: 160px;
+        }
+    }
+}
