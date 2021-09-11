@@ -14,9 +14,6 @@
   @media screen and (min-width: $desktop) {
     display: none;
   }
-  & svg {
-    fill: $footer-icons-hover;
-  }
 }
 
 .menu-container .menu-toggle {
@@ -28,10 +25,32 @@
   right: 28px;
   color: #fff;
 }
+.menu-container {
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+    fill: $modal-close;
+    transition: 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__close-icon:hover {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+  &__close-item:focus .modal-header__close-icon {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
 }
 
 .menu-container {
