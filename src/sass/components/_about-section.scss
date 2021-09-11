@@ -1,0 +1,229 @@
+.about-section {
+  background-color: #fff5f6;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 125px;
+    padding-bottom: 65px;
+  }
+}
+
+.about-section__box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 320px;
+
+  @media screen and(min-width:768px) {
+    width: 768px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 1280px;
+  }
+}
+
+.about-section__title-box {
+  width: 220px;
+  margin: 0 auto;
+  @media screen and(min-width:768px) {
+    width: auto;
+  }
+}
+
+.about-section__overhead {
+  font-family: Titan One;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 1.17;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-section__title {
+  font-family: Titan One;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (max-width: 767px) {
+    font-size: 34px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    margin-bottom: 102px;
+  }
+}
+
+.about-section__information-box {
+  background-image: url(../images/splashing-milk_320.png);
+  background-repeat: no-repeat;
+  background-position: 0% 89%;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 39px;
+    padding-right: 36px;
+    background-image: none;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding-left: 112px;
+    padding-right: 117px;
+    background-image: url(../images/splashing-milk_1280.png);
+  }
+}
+
+.about-section__information {
+  width: 220px;
+  margin: 0 auto;
+
+  @media screen and(min-width: 768px) {
+    width: auto;
+  }
+}
+
+.about-section__suptitle {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #000000;
+  margin-bottom: 35px;
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: 1.78;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about-section__description {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  margin-bottom: 22px;
+  color: #907e82;
+
+  @media screen and(min-width:768px) {
+    line-height: 1.78;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 1.92;
+    letter-spacing: 0.04em;
+    color: #907e82;
+    margin-bottom: 45px;
+  }
+}
+
+.paragraf {
+  margin-bottom: 0;
+}
+
+.about-section__image {
+  max-width: none;
+  margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 17px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 74px;
+  }
+}
+
+.about-section__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 162px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-top: 25px;
+  width: 176px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #d41443;
+  background-color: #ffffff;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 62px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 45px;
+  }
+}
+
+.about-section__btn:hover,
+.about-section__btn:focus {
+  background-color: #ecebeb;
+}
+
+/*&__location-icon {
+  margin-left: 14px;
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__location-btn:hover .contacts-section__location-icon,
+&__location-btn:focus .contacts-section__location-icon,
+&__franchise-btn:hover .contacts-section__franchise-icon,
+&__franchise-btn:focus .contacts-section__franchise-icon {
+  transform: rotate(180deg);
+}
+&__franchise-icon {
+  margin-left: 14px;
+  width: 10px;
+  height: 10px;
+  fill: #d41443;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}*/

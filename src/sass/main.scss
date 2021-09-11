@@ -1,10 +1,16 @@
+@import './components/breakpoints';
 @import './utils/variables';
 @import './utils/tag-settings';
 @import './components/numbers-section';
 @import './components/review-section';
 @import './components/contacts-section';
+@import './components/header';
+@import './components/btn';
+@import './components/mobile-menu/mobile-menu';
 @import './components/products-section';
 @import './components/galery-section';
+@import './components/about-section';
 @import './components/footer-section';
 @import './components/modal-location';
 @import './components/modal-franchise';
+@import './components/modal-header';

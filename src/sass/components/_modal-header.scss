@@ -1,4 +1,4 @@
-.backdrop-franchise {
+.backdrop-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -7,11 +7,11 @@
   background-color: rgba(255, 184, 202, 0.3);
   opacity: 1;
 }
-.backdrop-franchise.is-hidden {
+.backdrop-header.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.modal-franchise {
+.modal-header {
   position: absolute;
   width: 300px;
   height: 350px;

@@ -1,0 +1,102 @@
+.menu-toggle {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  margin-left: 61px;
+  @media screen and (min-width: $tablet) {
+    top: 52px;
+    margin: 0px;
+    z-index: 2;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+  & svg {
+    fill: $footer-icons-hover;
+  }
+}
+
+.menu-container .menu-toggle {
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 23px;
+  right: 28px;
+  color: #fff;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $menu-color;
+  z-index: 100;
+  transform: translatey(-110%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // overflow-y: scroll;
+  @media screen and (min-width: $tablet) {
+    max-width: 254px;
+    position: absolute;
+    right: 0px;
+    left: auto;
+  }
+  .nav-section__btn-modal{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    &:hover,
+    &:focus{
+      color: aqua;
+    }
+  }
+}
+
+.menu-container.is-open {
+  transform: translatey(0);
+}
+
+.arrow{
+  z-index: 2000;
+  fill: yellowgreen;
+}
+
+//мобильное меню=================
+
+.mobile-menu{
+margin-top: 123px;
+@media screen and(min-width: $tablet) {
+  width: 254px;
+}
+}
+
+.mobile-nav__item{
+  border-top: 1px solid #E18298;
+  padding: 13px 0px;
+
+  & a {
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+    font-style: normal;
+    padding-left: 21px;
+
+    &:hover{
+      color: $accent-colot;
+    }
+  }
+}

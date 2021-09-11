@@ -8,11 +8,11 @@
   //   padding-left: 15px;
   //   padding-right: 15px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding-top: 113px;
     padding-bottom: 25px;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 768px) {
     padding-top: 158px;
     padding-bottom: 18px;
   }
@@ -40,7 +40,7 @@
       justify-content: space-between;
     }
     @media screen and (min-width: 1280px) {
-      width: 1060px;
+      width: 1200px;
     }
   }
   &__title {
