@@ -43,6 +43,8 @@
     padding-bottom: 30px;
   }
   &__title {
+    margin-bottom: 30px;
+
     font-family: Titan One;
     font-weight: normal;
     font-size: 18px;
@@ -54,5 +56,19 @@
     text-transform: uppercase;
 
     color: #d41443;
+  }
+  &__subtitle {
+    margin-top: 50px;
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    // font-size: 34px;
+    // line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #ffa5ba;
   }
 }
