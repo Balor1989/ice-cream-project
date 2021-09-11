@@ -11,7 +11,15 @@
         <div class="modal-location__content">
             <h2 class="modal-location__title">We are here</h2>
             <div class="modal-location__map">
-                <img src="./images/contact-modal/map-280.png" alt="map" class="modal-location__image">
+                <picture>
+                    <source srcset="./images/contact-modal/map-280.png 1x, ./images/contact-modal/map-560.png 2x" media="(max-width:479px)"
+                    sizes="(min-width:280px)">
+                    <source srcset="./images/contact-modal/map-450.png 1x, ./images/contact-modal/map-900.png 2x" media="(max-width:767px)"
+                    sizes="(min-width:450px)">
+                    <source>
+                    <source>
+                    <img src="./images/contact-modal/map-280.png" alt="map" class="modal-location__image">
+                </picture>
                 <a href="https://www.google.com/maps/place/Чикаго,+Иллинойс,+США/@38.7435257,-103.3428808,5z/data=!4m5!3m4!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982" class="modal-location__link">
                     <svg class="modal-location__chicago">
                         <use href="./images/icons.svg#map-marker"></use>
