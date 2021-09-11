@@ -12,10 +12,47 @@
   pointer-events: none;
 }
 .modal-location {
-  width: 300px;
   position: absolute;
+  width: 300px;
+  height: 350px;
   top: 50%;
   left: 50%;
+
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
-  border-radius: 4px;
+  border-radius: 20px;
+  &__close-box {
+    position: relative;
+  }
+  &__close-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  }
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+  }
+  &__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &__title {
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    // font-size: 34px;
+    // line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+  }
 }
