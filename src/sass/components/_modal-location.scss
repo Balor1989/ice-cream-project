@@ -25,6 +25,14 @@
     width: 400px;
     height: 450px;
   }
+  @media screen and (min-width: 768px) {
+    width: 650px;
+    height: 580px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 900px;
+    height: 710px;
+  }
   &__close-box {
     position: relative;
   }
@@ -44,11 +52,16 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 30px;
-    padding-bottom: 30px;
     @media screen and (min-width: 480px) {
-      margin-top: 40px;
-      margin-bottom: 40px;
+      padding-top: 40px;
     }
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
   }
   &__title {
     margin-bottom: 30px;
@@ -64,6 +77,12 @@
     color: #d41443;
     @media screen and (min-width: 480px) {
       font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 34px;
     }
   }
   &__map {
@@ -85,8 +104,16 @@
       right: 100px;
     }
     @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 85px;
+      right: 175px;
     }
     @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 115px;
+      right: 255px;
     }
   }
   &__los-angeles {
@@ -104,8 +131,16 @@
       left: 55px;
     }
     @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 163px;
+      left: 100px;
     }
     @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 220px;
+      left: 155px;
     }
   }
   &__new-york {
@@ -123,8 +158,16 @@
       right: 20px;
     }
     @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 98px;
+      right: 47px;
     }
     @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 129px;
+      right: 85px;
     }
   }
   &__subtitle {
@@ -140,6 +183,12 @@
     color: #ffa5ba;
     @media screen and (min-width: 480px) {
       font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 34px;
     }
   }
 }
