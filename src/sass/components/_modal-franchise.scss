@@ -14,7 +14,7 @@
 .modal-franchise {
   position: absolute;
   width: 300px;
-  height: 600px;
+  height: 570px;
   top: 50%;
   left: 50%;
 
@@ -23,11 +23,11 @@
   border-radius: 20px;
   @media screen and (min-width: 480px) {
     width: 400px;
-    height: 450px;
+    height: 600px;
   }
   @media screen and (min-width: 768px) {
-    width: 650px;
-    height: 580px;
+    width: 500px;
+    height: 620px;
   }
   @media screen and (min-width: 1200px) {
     width: 900px;
@@ -130,6 +130,15 @@
     letter-spacing: 0.01em;
 
     color: $map-marker-hover;
+    @media screen and (min-width: 480px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
   }
   &__input {
     height: 40px;
@@ -154,7 +163,20 @@
     transform: translateY(15%);
     width: 18px;
     height: 18px;
+    fill: $map-marker-hover;
     transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 22px;
+      height: 22px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 22px;
+      height: 22px;
+    }
   }
   &__textarea {
     height: 120px;
@@ -170,22 +192,31 @@
     line-height: 1.67;
     letter-spacing: 0.01em;
     color: $modal-form-border;
-  }
-  &__submit-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 162px;
-    border: none;
-    border-radius: 22px;
-    @media screen and (max-width: 767px) {
-      margin-bottom: 10px;
+    @media screen and (min-width: 480px) {
+      font-size: 16px;
     }
     @media screen and (min-width: 768px) {
-      margin-right: 15px;
-      width: 191px;
+      font-size: 20px;
     }
-
+  }
+  &__btn-box {
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+      margin-top: 35px;
+    }
+    @media screen and (min-width: 768px) {
+    }
+  }
+  &__submit-btn {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    border: none;
+    border-radius: 22px;
     padding-top: 11px;
     padding-bottom: 11px;
     cursor: pointer;
