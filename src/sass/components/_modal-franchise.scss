@@ -14,7 +14,7 @@
 .modal-franchise {
   position: absolute;
   width: 300px;
-  height: 350px;
+  height: 400px;
   top: 50%;
   left: 50%;
 
@@ -65,9 +65,109 @@
     }
   }
 
-  &__close-icon:hover,
-  &__close-icon:focus {
+  &__close-icon:hover {
     fill: $modal-close-hover;
     transform: rotate(90deg);
+  }
+  &__close-item:focus .modal-franchise__close-icon {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+  &__title {
+    padding-top: 40px;
+    margin-bottom: 30px;
+
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $title-color-second;
+    @media screen and (min-width: 480px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 34px;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      width: 50%;
+    }
+  }
+  &__image {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+}
+.modal-form {
+  padding-left: 15px;
+  padding-right: 15px;
+  &__name,
+  &__email,
+  &__tel,
+  &__coments {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    border-radius: 4px;
+  }
+  &__text {
+    margin-bottom: 4px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+
+    color: $map-marker-hover;
+  }
+  &__input {
+    height: 40px;
+    padding-left: 42px;
+    border: 2px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms $timer-function;
+  }
+  &__input:focus + .modal-form__icon {
+    fill: $map-marker;
+  }
+  &__input:focus,
+  &__textarea:focus {
+    border: 2px solid $map-marker-hover;
+    outline: none;
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(15%);
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms $timer-function;
+  }
+  &__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    border: 2px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    transition: border 250ms $timer-function;
+  }
+  &__textarea::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
   }
 }

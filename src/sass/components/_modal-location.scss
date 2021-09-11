@@ -65,12 +65,14 @@
     }
   }
 
-  &__close-icon:hover,
-  &__close-icon:focus {
+  &__close-icon:hover {
     fill: $modal-close-hover;
     transform: rotate(90deg);
   }
-
+  &__close-item:focus .modal-franchise__close-icon {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
   &__content {
     padding-left: 15px;
     padding-right: 15px;
