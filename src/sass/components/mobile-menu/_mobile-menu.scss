@@ -52,13 +52,13 @@
     right: 0px;
     left: auto;
   }
-  .nav-section__btn-modal{
+  .nav-section__btn-modal {
     position: absolute;
     top: 60px;
     left: 50%;
     transform: translateX(-50%);
     &:hover,
-    &:focus{
+    &:focus {
       color: aqua;
     }
   }
@@ -68,22 +68,22 @@
   transform: translatey(0);
 }
 
-.arrow{
+.arrow {
   z-index: 2000;
   fill: yellowgreen;
 }
 
 //мобильное меню=================
 
-.mobile-menu{
-margin-top: 123px;
-@media screen and(min-width: $tablet) {
-  width: 254px;
-}
+.mobile-menu {
+  margin-top: 123px;
+  @media screen and(min-width: $tablet) {
+    width: 254px;
+  }
 }
 
-.mobile-nav__item{
-  border-top: 1px solid #E18298;
+.mobile-nav__item {
+  border-top: 1px solid #e18298;
   padding: 13px 0px;
 
   & a {
@@ -95,7 +95,7 @@ margin-top: 123px;
     font-style: normal;
     padding-left: 21px;
 
-    &:hover{
+    &:hover {
       color: $accent-colot;
     }
   }
