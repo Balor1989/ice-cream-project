@@ -21,6 +21,10 @@
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   border-radius: 20px;
+  @media screen and (min-width: 480px) {
+    width: 400px;
+    height: 450px;
+  }
   &__close-box {
     position: relative;
   }
@@ -56,6 +60,37 @@
     text-transform: uppercase;
 
     color: #d41443;
+  }
+  &__map {
+    position: relative;
+  }
+
+  &__chicago {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    right: 71px;
+
+    fill: #d41443;
+  }
+  &__los-angeles {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 70px;
+    left: 40px;
+
+    fill: #d41443;
+  }
+  &__new-york {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 40px;
+    right: 15px;
+
+    fill: #d41443;
   }
   &__subtitle {
     margin-top: 50px;
