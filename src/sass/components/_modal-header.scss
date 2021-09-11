@@ -13,25 +13,26 @@
 }
 .modal-header {
   position: absolute;
-  width: 300px;
+  width: 367px;
   height: 350px;
   top: 50%;
   left: 50%;
+  box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.47);
 
-  background-color: #ffffff;
+  background-color: #f3e8e9;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   @media screen and (min-width: 480px) {
-    width: 400px;
-    height: 450px;
+    width: 380px;
+    height: 380px;
   }
   @media screen and (min-width: 768px) {
-    width: 650px;
-    height: 580px;
+    width: 480px;
+    height: 480px;
   }
   @media screen and (min-width: 1200px) {
-    width: 900px;
-    height: 710px;
+    width: 500px;
+    height: 500px;
   }
   &__close-box {
     position: relative;
@@ -70,4 +71,114 @@
     fill: $modal-close-hover;
     transform: rotate(90deg);
   }
+}
+.buy-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_modal {
+  display: flex;
+  justify-content: center;
+  font-family: Titan One;
+  color: $title-color-second;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: 1.12;
+  padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 34px;
+  }
+}
+.modal-ice-cream {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: $title-color-first;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-first;
+    height: 32px;
+    width: 240px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.modal-ice-coffee {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: $products-card-second;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-second;
+    height: 32px;
+    width: 240px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.modal-milkshakes {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 24px;
+    color: $products-card-third;
+    margin-bottom: 8px;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-third;
+    height: 32px;
+    width: 240px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.button_send_form {
+  border: none;
+  background-color: $title-color-second;
+  color: $primary-text-color;
+  font-family: Titan One;
+  font-size: 24px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 30px;
+  box-shadow: $shadow-modal;
 }
