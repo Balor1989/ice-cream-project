@@ -30,8 +30,8 @@
     height: 620px;
   }
   @media screen and (min-width: 1200px) {
-    width: 900px;
-    height: 710px;
+    width: 750px;
+    height: 650px;
   }
   &__close-box {
     position: relative;
@@ -99,7 +99,8 @@
   &__content {
     @media screen and (min-width: 1200px) {
       display: flex;
-      width: 50%;
+      align-items: center;
+      justify-content: space-around;
     }
   }
   &__image {
@@ -111,6 +112,9 @@
 .modal-form {
   padding-left: 15px;
   padding-right: 15px;
+  @media screen and (min-width: 1200px) {
+    width: 350px;
+  }
   &__name,
   &__email,
   &__tel,
@@ -130,14 +134,9 @@
     letter-spacing: 0.01em;
 
     color: $map-marker-hover;
-    @media screen and (min-width: 480px) {
-      font-size: 16px;
-    }
+
     @media screen and (min-width: 768px) {
-      font-size: 20px;
-    }
-    @media screen and (min-width: 1200px) {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
   &__input {
@@ -160,7 +159,7 @@
     position: absolute;
     top: 50%;
     left: 12px;
-    transform: translateY(15%);
+    transform: translateY(25%);
     width: 18px;
     height: 18px;
     fill: $map-marker-hover;
@@ -172,10 +171,12 @@
     @media screen and (min-width: 768px) {
       width: 24px;
       height: 24px;
+      transform: translateY(25%);
     }
     @media screen and (min-width: 1200px) {
       width: 22px;
       height: 22px;
+      transform: translateY(25%);
     }
   }
   &__textarea {
