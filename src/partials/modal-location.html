@@ -16,8 +16,10 @@
                     sizes="(min-width:280px)">
                     <source srcset="./images/contact-modal/map-450.png 1x, ./images/contact-modal/map-900.png 2x" media="(max-width:767px)"
                     sizes="(min-width:450px)">
-                    <source>
-                    <source>
+                    <source srcset="./images/contact-modal/map-600.png 1x, ./images/contact-modal/map-1200.png 2x" media="(max-width:1199px)"
+                    sizes="(min-width:600px)">
+                    <source srcset="./images/contact-modal/map-800.png 1x, ./images/contact-modal/map-1600.png 2x" media="(min-width:1200px)"
+                    sizes="(min-width:800px)">
                     <img src="./images/contact-modal/map-280.png" alt="map" class="modal-location__image">
                 </picture>
                 <a href="https://www.google.com/maps/place/Чикаго,+Иллинойс,+США/@38.7435257,-103.3428808,5z/data=!4m5!3m4!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982" class="modal-location__link">
@@ -36,7 +38,11 @@
                     </svg>
                 </a>
             </div>
-            <p class="modal-location__subtitle">Visit us&#128521;</p>
+            <p class="modal-location__subtitle">visit our shops
+                <svg class="modal-location__subtitle-icon">
+                    <use href="./images/icons.svg#wink"></use>
+                </svg>
+            </p>
          </div>
         </form>
     </div>
