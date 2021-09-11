@@ -12,10 +12,62 @@
   pointer-events: none;
 }
 .modal-franchise {
-  width: 300px;
   position: absolute;
+  width: 300px;
+  height: 350px;
   top: 50%;
   left: 50%;
+
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
-  border-radius: 4px;
+  border-radius: 20px;
+  @media screen and (min-width: 480px) {
+    width: 400px;
+    height: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 650px;
+    height: 580px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 900px;
+    height: 710px;
+  }
+  &__close-box {
+    position: relative;
+  }
+  &__close-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  }
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    fill: $modal-close;
+    transition: 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__close-icon:hover,
+  &__close-icon:focus {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
 }

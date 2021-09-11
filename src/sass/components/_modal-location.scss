@@ -12,10 +12,230 @@
   pointer-events: none;
 }
 .modal-location {
-  width: 300px;
   position: absolute;
+  width: 300px;
+  height: 350px;
   top: 50%;
   left: 50%;
+
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
-  border-radius: 4px;
+  border-radius: 20px;
+  @media screen and (min-width: 480px) {
+    width: 400px;
+    height: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 650px;
+    height: 580px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 900px;
+    height: 710px;
+  }
+  &__close-box {
+    position: relative;
+  }
+  &__close-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+  }
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+
+    fill: $modal-close;
+    transition: 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__close-icon:hover,
+  &__close-icon:focus {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+
+  &__content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    @media screen and (min-width: 480px) {
+      padding-top: 40px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+  &__image {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    margin-bottom: 30px;
+
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #d41443;
+    @media screen and (min-width: 480px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 34px;
+    }
+  }
+  &__map {
+    position: relative;
+  }
+  &__chicago {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 35px;
+    right: 71px;
+
+    fill: $map-marker;
+    transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 25px;
+      height: 25px;
+      top: 50px;
+      right: 100px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 85px;
+      right: 175px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 115px;
+      right: 255px;
+    }
+  }
+  &__los-angeles {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 70px;
+    left: 40px;
+
+    fill: $map-marker;
+    transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 25px;
+      height: 25px;
+      top: 98px;
+      left: 55px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 163px;
+      left: 100px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 220px;
+      left: 155px;
+    }
+  }
+  &__new-york {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 40px;
+    right: 15px;
+
+    fill: $map-marker;
+    transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 25px;
+      height: 25px;
+      top: 57px;
+      right: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 98px;
+      right: 47px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 129px;
+      right: 85px;
+    }
+  }
+  &__chicago:hover,
+  &__los-angeles:hover,
+  &__new-york:hover {
+    fill: $map-marker-hover;
+  }
+  &__subtitle {
+    margin-top: 50px;
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #ffa5ba;
+    @media screen and (min-width: 480px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 34px;
+    }
+  }
+  &__subtitle-icon {
+    width: 15px;
+    height: 15px;
+    fill: $modal-close-hover;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
