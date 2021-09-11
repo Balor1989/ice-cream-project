@@ -6,13 +6,16 @@ html {
   box-sizing: inherit;
 }
 
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 body {
   font-family: 'DM sans', sans-serif;
   color: $secondary-text-color;
+}
+.body.is-hidden {
+  overflow: hidden;
 }
 
 h1,
@@ -36,7 +39,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 .container {
   margin: 0 auto;
