@@ -6,8 +6,8 @@ html {
   box-sizing: inherit;
 }
 
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -15,6 +15,9 @@ body {
   color: $secondary-text-color;
   margin: 0px;
   padding: 0px;
+}
+.body.is-hidden {
+  overflow: hidden;
 }
 
 h1,
