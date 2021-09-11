@@ -1,4 +1,4 @@
-.backdrop-header {
+.backdrop-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,33 +6,35 @@
   height: 100%;
   background-color: rgba(255, 184, 202, 0.3);
   opacity: 1;
+  z-index: 801;
 }
-.backdrop-header.is-hidden {
+.backdrop-mobile.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-.modal-header {
+.modal-mobile {
   position: absolute;
-  width: 367px;
+  width: 300px;
   height: 350px;
   top: 50%;
   left: 50%;
+  z-index: 802;
   box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.47);
 
-  background-color: #f3e8e9;
+  background-color: #ffffff;
   transform: translate(-50%, -50%);
   border-radius: 20px;
   @media screen and (min-width: 480px) {
-    width: 380px;
-    height: 380px;
+    width: 400px;
+    height: 450px;
   }
   @media screen and (min-width: 768px) {
-    width: 480px;
-    height: 480px;
+    width: 650px;
+    height: 580px;
   }
   @media screen and (min-width: 1200px) {
-    width: 500px;
-    height: 500px;
+    width: 900px;
+    height: 710px;
   }
   &__close-box {
     position: relative;
@@ -77,26 +79,20 @@
   flex-direction: column;
   align-items: center;
 }
-.title_modal {
+.title_modal-mobile {
   display: flex;
   justify-content: center;
   font-family: Titan One;
   color: $title-color-second;
   text-transform: uppercase;
-  font-size: 54px;
+  font-size: 24px;
   line-height: 1.12;
-  padding-top: 30px;
-  @media screen and (min-width: 768px) {
-    font-size: 34px;
-  }
-  @media screen and (min-width: 480px) {
-    font-size: 34px;
-  }
+  padding-top: 15px;
 }
-.modal-ice-cream {
+.modal-ice-cream-mob {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   &__form {
     display: flex;
     flex-direction: column;
@@ -104,7 +100,7 @@
   }
   &__label {
     font-family: Titan One;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 8px;
     color: $title-color-first;
   }
@@ -113,16 +109,16 @@
     border-radius: 2px;
     background-color: $products-card-first;
     height: 32px;
-    width: 240px;
+    width: 180px;
     padding-left: 5px;
     color: $title-color-second;
     box-shadow: $shadow-modal;
   }
 }
-.modal-ice-coffee {
+.modal-ice-coffee-mob {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   &__form {
     display: flex;
     flex-direction: column;
@@ -130,7 +126,7 @@
   }
   &__label {
     font-family: Titan One;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 8px;
     color: $products-card-second;
   }
@@ -139,16 +135,16 @@
     border-radius: 2px;
     background-color: $products-card-second;
     height: 32px;
-    width: 240px;
+    width: 180px;
     padding-left: 5px;
     color: $title-color-second;
     box-shadow: $shadow-modal;
   }
 }
-.modal-milkshakes {
+.modal-milkshakes-mob {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   &__form {
     display: flex;
     flex-direction: column;
@@ -156,7 +152,7 @@
   }
   &__label {
     font-family: Titan One;
-    font-size: 24px;
+    font-size: 18px;
     color: $products-card-third;
     margin-bottom: 8px;
   }
@@ -165,20 +161,20 @@
     border-radius: 2px;
     background-color: $products-card-third;
     height: 32px;
-    width: 240px;
+    width: 180px;
     padding-left: 5px;
     color: $title-color-second;
     box-shadow: $shadow-modal;
   }
 }
-.button_send_form {
+.button_send_mobile {
   border: none;
   background-color: $title-color-second;
   color: $primary-text-color;
   font-family: Titan One;
-  font-size: 24px;
+  font-size: 15px;
   border-radius: 4px;
-  padding: 10px 15px;
-  margin-top: 30px;
+  padding: 10px 25px;
+  margin-top: 18px;
   box-shadow: $shadow-modal;
 }
