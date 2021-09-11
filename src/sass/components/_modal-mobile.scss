@@ -19,6 +19,7 @@
   top: 50%;
   left: 50%;
   z-index: 802;
+  box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.47);
 
   background-color: #ffffff;
   transform: translate(-50%, -50%);
@@ -72,4 +73,108 @@
     fill: $modal-close-hover;
     transform: rotate(90deg);
   }
+}
+.buy-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_modal-mobile {
+  display: flex;
+  justify-content: center;
+  font-family: Titan One;
+  color: $title-color-second;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.12;
+  padding-top: 15px;
+}
+.modal-ice-cream-mob {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: $title-color-first;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-first;
+    height: 32px;
+    width: 180px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.modal-ice-coffee-mob {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: $products-card-second;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-second;
+    height: 32px;
+    width: 180px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.modal-milkshakes-mob {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  &__label {
+    font-family: Titan One;
+    font-size: 18px;
+    color: $products-card-third;
+    margin-bottom: 8px;
+  }
+  &__title {
+    border: none;
+    border-radius: 2px;
+    background-color: $products-card-third;
+    height: 32px;
+    width: 180px;
+    padding-left: 5px;
+    color: $title-color-second;
+    box-shadow: $shadow-modal;
+  }
+}
+.button_send_mobile {
+  border: none;
+  background-color: $title-color-second;
+  color: $primary-text-color;
+  font-family: Titan One;
+  font-size: 15px;
+  border-radius: 4px;
+  padding: 10px 25px;
+  margin-top: 18px;
+  box-shadow: $shadow-modal;
 }
