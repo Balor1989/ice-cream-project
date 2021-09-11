@@ -1,30 +1,37 @@
-<header class="header container">
+<header class="header">
     <div class="header__box">
         <nav class="nav-section">
-            <div class="nav-section__logo">
-                <img src="./images/logo.png" alt="logo" class="nav-section__logo-img" width="199">
-            </div>
-            <div class="nav-section__site-nav">
-                <ul class="site-nav">
-                    <li class="site-nav__item"><a href="#">Home</a></li>
-                    <li class="site-nav__item"><a href="#">About us</a></li>
-                    <li class="site-nav__item"><a href="#">How it’s made?</a></li>
-                    <li class="site-nav__item"><a href="#">Our products</a></li>
-                    <li class="site-nav__item"><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="nav-section__btn-box">
-                <button class="nav-section__btn-modal" type="button">Buy now</button>
+
+            <div class="header--mobile">
+                <div class="nav-section__logo">
+                    <img src="./images/logo.png" alt="logo" class="nav-section__logo-img" width="199">
+                </div>
+
+                <div class="nav-section__site-nav">
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">About us</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">How it’s made?</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">Our products</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="section-button">
+
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg width="30" height="30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
+                        </svg>
+                    </button>
+
+                    <button class="nav-section__btn-modal" type="button">Buy now</button>
+
+                </div>
+
             </div>
 
             <!-- Мобильное меню!!! -->
-
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg width="30" height="30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"></path>
-                </svg>
-            </button>
-
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
                     <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><path fill-rule="evenodd"
@@ -49,20 +56,27 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
+            <!-- Мобильное меню!!! -->
         </nav>
+
+        <div class="circle">
+            <img class="hero-img--mobile"
+            srcset="./images/ice-cream_171.png 1x, ./images/ice-cream_171@2x.png 2x, ./images/ice-cream_171@3x.png 3x"
+            src="./images/ice-cream_171.png"
+            alt="ice-cream">
+            <img class="hero-img--tablet"
+            srcset="./images/ice-cream_143.png 1x, ./images/ice-cream_143@2x.png 2x, ./images/ice-cream_143@3x.png 3x"
+            src="./images/ice-cream_143.png"
+            alt="ice-cream">
+            <img class="hero-img--desktop"
+            srcset="./images/ice-cream_236.png 1x, ./images/ice-cream_236@2x.png 2x, ./images/ice-cream_236@3x.png 3x"
+            src="./images/ice-cream_236.png"
+            alt="ice-cream">
+        </div>
+
         <div class="title-section">
             <div class="title-section__title-box">
                 <h1 class="hero-title">ice cream <br> made with <p>passion</p></h1>
-                <div class="circle"></div>
-                <div class="ice-cream">
-
-                </div>
-
                 <div class="title-section__btn-box">
                     <a href="#" class="title-section__first-link">Products</a>
                     <a href="#" class="title-section__second-link">How it’s made?</a>
@@ -70,10 +84,12 @@
             </div>
             <div class="title-section__numbers">
                 <div class="title-section__number-box">
+                    <div class="title-section--circle"></div>
                     <h2 class="title-section__number-title">16</h2>
                     <p class="title-section__number-description">cafes</p>
                 </div>
                 <div class="title-section__number-box">
+                    <div class="title-section--circle"></div>
                     <h2 class="title-section__number-title">23</h2>
                     <p class="title-section__number-description">food trucks</p>
                 </div>
@@ -81,12 +97,22 @@
         </div>
         <div class="milk-box">
             <img src="./images/slider-pic5.png" alt="milk" class="milk-box__img" width="188">
-            <p class="milk-box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <a href="#" class="milk-box__btn">></a>
+            <div class="milk-box--wrrap">
+
+                <p class="milk-box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <a href="#" class="milk-box__btn">></a>
+            </div>
         </div>
-        <img src="./images/slider-pic7.png" alt="ice-cream" class="header__hero-image" width="236">
-        <img src="./images/slider-pic4.png" alt="ice-cream" class="header__hero-image" width="293">
+        <img class="galochka--tablet"
+            srcset="./images/galochka_168.png 1x, ./images/galochka_168@2x.png 2x, ./images/galochka_168@3x.png 3x"
+            src="./images/galochka_168.png"
+            alt="galochka__tablet">
+        <img class="galochka--desktop"
+            srcset="./images/galochka_239.png 1x, ./images/galochka_239@2x.png 2x, ./images/galochka_239@3x.png 3x"
+            src="./images/galochka_239.png"
+            alt="galochka__desktop">
     </div>
+
 </header>
 
 
