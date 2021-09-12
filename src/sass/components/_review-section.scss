@@ -58,16 +58,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: #fafafa;
   padding: 43px 66px 26px 57px;
   margin-bottom: 30px;
+  width: 280px;
+  min-height: 308px;
 
   @media screen and (min-width: 768px) {
     padding: 30px 36px 28px 40px;
+    width: 620px;
+    min-height: 164px;
+    
   }
   @media screen and (min-width: 1200px) {
     padding: 32px 54px 32px 50px;
+    width: 926px;
+    min-height: 138px;
   }
 }
 
@@ -99,32 +109,6 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
-  }
-}
-
-.review-section__description p::before {
-  display: block;
-  z-index: 601;
-  width: 60px;
-  content: '';
-  height: 40px;
-
-  background-image: url(../images/quotes.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: contain;
-  position: absolute;
-  top: 28px;
-  left: 61px;
-
-  @media screen and (min-width: 768px) {
-    top: 30px;
-    left: 40px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 32px;
-    left: 50px;
   }
 }
 
@@ -197,4 +181,52 @@
   background-color: transparent;
   background-size: contain;
   border-radius: 0%;
+}
+.review-section__description-part{
+  
+  display: inline-block;
+  font-family: DM Sans;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $secondary-text-color;
+  @media screen and  (max-width: 767px) {
+    font-size: 12px;
+    line-height: 2.58;
+  }
+  @media screen and (min-width: 768px) and  (max-width: 1199px) {
+    font-size: 16px;
+    line-height: 2.14;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+      &::before {
+        position: absolute;
+        z-index: 600;
+        display: block;
+        content: '';
+        width: 54px;
+        height: 40px;
+    
+        background-image: url(../images/quotes.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-size: contain;
+        opacity: 0.7;
+        
+        top: 28px;
+        left: 61px;
+      
+        @media screen and (min-width: 768px) {
+          top: 17px;
+          left: 40px;
+        }
+        @media screen and (min-width: 1200px) {
+          top: 15px;
+          left: 37px;
+        }
+      } 
 }
