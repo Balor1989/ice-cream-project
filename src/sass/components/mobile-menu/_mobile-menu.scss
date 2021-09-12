@@ -14,9 +14,6 @@
   @media screen and (min-width: $desktop) {
     display: none;
   }
-  & svg {
-    fill: $footer-icons-hover;
-  }
 }
 
 .menu-container .menu-toggle {
@@ -28,10 +25,32 @@
   right: 28px;
   color: #fff;
 }
+.menu-container {
+  &__close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+    fill: $modal-close;
+    transition: 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__close-icon:hover {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
+  &__close-item:focus .modal-header__close-icon {
+    fill: $modal-close-hover;
+    transform: rotate(90deg);
+  }
 }
 
 .menu-container {
@@ -52,14 +71,48 @@
     right: 0px;
     left: auto;
   }
-  .nav-section__btn-modal {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    &:hover,
-    &:focus {
-      color: aqua;
+  .nav-section {
+    &__btn-modal {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 162px;
+      padding-top: 11px;
+      padding-bottom: 11px;
+      border: none;
+      border-radius: 22px;
+      cursor: pointer;
+
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+
+      color: #d41443;
+      background-color: #ffffff;
+      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 768px) {
+        width: 174px;
+      }
+    }
+    &__btn-modal:hover,
+    &__btn-modal:focus {
+      background-color: #ecebeb;
+    }
+
+    &__btn-modal:hover .nav-section__icon,
+    &__btn-modal:focus .nav-section__icon {
+      transform: rotate(180deg);
+    }
+    &__icon {
+      margin-left: 14px;
+      width: 10px;
+      height: 10px;
+      fill: #d41443;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
