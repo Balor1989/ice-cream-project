@@ -148,7 +148,7 @@
     color: #fff;
     font-style: normal;
 
-    transition: transform 250ms $timer-function;
+    transition: color 250ms $timer-function;
   }
   &__link:hover,
   &__link:focus {
