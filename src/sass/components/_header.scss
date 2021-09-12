@@ -65,7 +65,19 @@
 //   top: 83px;
 //   transform: translateX(36px);
 // }
-
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  &__icon {
+    width: 25px;
+    height: 25px;
+    fill: #d41443;
+    transition: transform 250ms $timer-function;
+  }
+  &__icon:hover {
+    transform: rotate(180deg);
+  }
+}
 .header--mobile {
   display: flex;
   align-items: center;
