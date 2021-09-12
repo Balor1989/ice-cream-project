@@ -408,8 +408,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: #fff;
     transition: background-color 250ms $timer-function;
@@ -420,12 +420,12 @@
   }
   &__icon {
     width: 10px;
-    height: 12px;
+    height: 10px;
     fill: #d41443;
     transition: transform 250ms $timer-function;
     @media screen and (min-width: 1200px) {
       width: 12px;
-      height: 16px;
+      height: 12px;
     }
   }
   &__btn:hover,
