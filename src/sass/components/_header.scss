@@ -208,7 +208,18 @@
     left: 115px;
   }
 }
-
+.title-section {
+  &__title-box {
+    @media screen and (max-width: 767px) {
+      position: relative;
+      z-index: 3;
+      padding-top: 137px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-top: 15px;
+    }
+  }
+}
 .hero-title {
   font-family: Titan One;
   font-size: 26px;
