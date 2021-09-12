@@ -1,6 +1,5 @@
 <div class="backdrop-franchise is-hidden" data-modal-franchise>
     <div class="modal-franchise">
-        <div>
             <div class="modal-franchise__close-box">
                 <button class="modal-franchise__close-item" data-modal-close-franchise>
                     <svg class="modal-franchise__close-icon">
@@ -9,7 +8,48 @@
                     </svg>
                 </button>
             </div>
-
+            <h2 class="modal-franchise__title">Contact us</h2>
+            <div class="modal-franchise__content">
+            <picture>
+                <source srcset="./images/kaifushnik-300.png 1x, ./images/kaifushnik-600.png 2x"
+                    media="(min-width:1200px)" sizes="(min-width:300px)">
+                <img src="./images/kaifushnik-300.png" alt="ice-cream" class="modal-franchise__image" width="350">
+            </picture>
+                <form class="modal-form">
+                    <div class="modal-form__name">
+                        <label class="modal-form__text" for="name">Name</label>
+                        <input class="modal-form__input" type="text" name="name" id="name">
+                        <svg class="modal-form__icon">
+                            <use href="./images/icons.svg#user"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-form__tel">
+                        <label class="modal-form__text" for="tel">Phone number</label>
+                        <input class="modal-form__input" type="tel" name="tel" id="tel">
+                        <svg class="modal-form__icon">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-form__email">
+                        <label class="modal-form__text" for="email">E-mail</label>
+                        <input class="modal-form__input" type="email" name="email" id="email">
+                        <svg class="modal-form__icon">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-form__coments">
+                        <label class="modal-form__text" for="coments">Comments</label>
+                        <textarea class="modal-form__textarea" name="coments" id="coments" cols="10" rows="5"
+                            placeholder="Enter text here"></textarea>
+                    </div>
+                    <div class="modal-form__btn-box">
+                        <button type="button" class="modal-form__submit-btn">Submit
+                            <svg class="modal-form__submit-icon">
+                                <use href="./images/icons.svg#chevron-right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
 </div>

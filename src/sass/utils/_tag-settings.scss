@@ -11,8 +11,10 @@ a {
 }
 
 body {
-  font-family: 'DM sans', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   color: $secondary-text-color;
+  margin: 0px;
+  padding: 0px;
 }
 .body.is-hidden {
   overflow: hidden;
@@ -38,22 +40,4 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  // @media screen and (min-width: $mobile) {
-  //   max-width: 480px;
-  // }
-
-  @media screen and (min-width: $tablet) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 1200px;
-  }
 }
