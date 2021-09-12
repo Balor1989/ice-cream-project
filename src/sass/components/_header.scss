@@ -5,20 +5,15 @@
   margin-right: auto;
   height: 502px;
   overflow: hidden;
+  padding: 0px 20px;
   //display: flex;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 399px;
+    padding: 0px 34px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     height: 665px;
-  }
-  &__box {
-    padding-left: 20px;
-    padding-right: 20px;
-    @media screen and(min-width:768px) {
-      padding-left: 34px;
-      padding-right: 34px;
-    }
+    padding: 0px 46px;
   }
 }
 
@@ -65,6 +60,7 @@
 //   top: 83px;
 //   transform: translateX(36px);
 // }
+
 .menu-toggle {
   display: flex;
   align-items: center;
@@ -78,6 +74,7 @@
     transform: rotate(180deg);
   }
 }
+
 .header--mobile {
   display: flex;
   align-items: center;
@@ -140,14 +137,9 @@
     }
     @media screen and (min-width: $desktop) {
       margin: 0px;
+      margin-right: 69px;
     }
   }
-}
-
-.nav-section__logo {
-  margin: 0px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-button {
@@ -158,6 +150,23 @@
     z-index: 2;
   }
 }
+
+.nav-section__btn-box {
+  .nav-section__btn-modal {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      display: block;
+    }
+  }
+}
+
+.nav-section__logo {
+  margin: 0px;
+  padding-top: 6px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 .nav-section__site-nav {
   display: none;
@@ -189,8 +198,7 @@
   color: #fff;
 }
 
-.title-section {
-  &__title-box {
+.title-section__title-box {
     position: absolute;
     z-index: 20;
     top: 193px;
@@ -199,14 +207,20 @@
       top: 102px;
       left: 37px;
     }
+    @media screen and (min-width: $desktop ) {
+      top: 171px;
+      left: 115px;
+    }
   }
-}
+
 .hero-title {
   font-family: Titan One;
   font-size: 26px;
   font-weight: 400;
   line-height: 1.145;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   @media screen and(min-width: $tablet) {
     font-size: 22px;
   }
@@ -233,6 +247,9 @@
   display: flex;
   @media screen and (min-width: $tablet) {
     margin-top: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 25px;
   }
   .title-section__first-link {
     width: 62px;
@@ -280,6 +297,9 @@
       color: $accent-colot;
       font-weight: 400;
       font-size: 28px;
+      @media screen and (min-width: $desktop) {
+        font-size: 46px;
+      }
     }
     .title-section__number-description {
       font-family: DM Sans, sans-serif;
@@ -287,6 +307,9 @@
       font-size: 8px;
       line-height: 1.3;
       color: #fff;
+      @media screen and (min-width: $desktop) {
+        font-size: 14px;
+      }
     }
   }
   @media screen and (min-width: $tablet) {
@@ -298,6 +321,10 @@
     right: 34px;
     z-index: 20;
   }
+  @media screen and (min-width: $desktop) {
+    right: 97px;
+    top: 156px
+  }
 }
 
 .title-section--circle {
@@ -308,6 +335,11 @@
   border-radius: 50%;
   right: -10%;
   z-index: -1;
+  @media screen and (min-width: $desktop) {
+    width: 30px;
+  height: 30px;
+  right: -25%;
+  }
 }
 
 .hero-img--mobile {
@@ -323,10 +355,10 @@
 
 .hero-img--tablet {
   display: none;
-  @media screen and(min-width:$tablet) and (max-width: $desktop) {
+  @media screen and(min-width:$tablet) and (max-width: 1199px) {
     display: block;
     position: absolute;
-    top: 22%;
+    top: 15%;
     left: 49.22%;
     z-index: 2;
     //transform: translateX(-60%);
@@ -337,18 +369,18 @@
   display: none;
   position: absolute;
   top: 15.79%;
-  left: 49.22%;
+  left: 46.41%;
   z-index: 2;
   //transform: translateX(-60%);
   @media screen and (min-width: $desktop) {
     display: block;
-    transform: translate(-50%, 6%);
+    //transform: translate(-50%, 6%);
   }
 }
 
 .galochka--tablet {
   display: none;
-  @media screen and(min-width: $tablet) and (max-width: $desktop) {
+  @media screen and(min-width: $tablet) and (max-width: 1199px) {
     display: block;
     position: absolute;
     bottom: 0%;
@@ -372,16 +404,31 @@
   display: none;
   @media screen and (min-width: $tablet) {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
-    bottom: 0;
+    bottom: 28px;
     left: 34px;
     z-index: 2;
   }
+  @media screen and (min-width: $desktop) {
+    bottom: 45px;
+    left: 77px;
+    align-items: center;
+  }
 }
 
-.milk-box__img {
+.milk-box__img--tablet {
   display: block;
+  @media screen and(min-width: $desktop) {
+display: none;
+  }
+}
+
+.milk-box__img--desktop {
+ display: none;
+  @media screen and(min-width: $desktop) {
+    display: block;
+  }
 }
 
 .milk-box--wrrap {
@@ -397,10 +444,15 @@
   flex-wrap: wrap;
   font-family: DM Sans, sans-serif;
   font-size: 8px;
-  line-height: 1.5;
+  line-height: 12px;
   color: #fff;
   width: 114px;
-  margin-bottom: 7px;
+  font-weight: 400;
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    width: 200px;
+    line-height: 1.4;
+  }
 }
 
 .milk-box {
@@ -413,9 +465,11 @@
     border-radius: 50%;
     background-color: #fff;
     transition: background-color 250ms $timer-function;
+    margin-top: 7px;
     @media screen and (min-width: 1200px) {
       width: 26px;
       height: 26px;
+      margin-top: 20px;
     }
   }
   &__icon {
@@ -437,48 +491,8 @@
   }
 }
 
-.header {
-  background-color: $breand-color;
-}
-
-.nav-section__logo {
-  margin: 0px;
-  padding-top: 6px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   @media screen and(min-width: $tablet) {
-  //     padding-top: 37px;
-  //   }
-}
-
-// .nav-section {
-//   position: relative;
-// }
-
-.nav-section__btn-box {
-  .nav-section__btn-modal {
-    display: none;
-    @media screen and (min-width: $tablet) {
-      display: block;
-    }
-  }
-}
-
 .nav-section__site-nav {
   @media screen and(max-width: $tablet) {
     display: none;
-  }
-}
-
-.hero-title {
-  z-index: 30;
-  font-family: Titan One;
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 1.145;
-  color: #fff;
-  & p {
-    font-size: 48px;
-    color: $accent-colot;
   }
 }

@@ -68,7 +68,14 @@
             </div>
         </div>
         <div class="milk-box">
-            <img src="./images/slider-pic5.png" alt="milk" class="milk-box__img" width="188">
+            <img class="milk-box__img--tablet"
+            srcset="./images/milk_124.png 1x, ./images/milk_124@2x.png 2x, ./images/milk_124@3x.png 3x"
+            src="./images/milk_124.png"
+            alt="milk">
+            <img class="milk-box__img--desktop"
+            srcset="./images/milk_188.png 1x, ./images/milk_188@2x.png 2x, ./images/milk_188@3x.png 3x"
+            src="./images/milk_188.png"
+            alt="milk">
             <div class="milk-box--wrrap">
 
                 <p class="milk-box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
@@ -106,11 +113,11 @@
         <div class="mobile-menu">
             <div class="mobile-menu__navigation">
                 <ul class="mobile-nav">
-                    <li class="mobile-nav__item"><a href="#home">Home</a></li>
-                    <li class="mobile-nav__item"><a href="#review-section">About us</a></li>
-                    <li class="mobile-nav__item"><a href="#about-section">How it’s made?</a></li>
-                    <li class="mobile-nav__item"><a href="#products-section">Our products</a></li>
-                    <li class="mobile-nav__item"><a href="#contacts-section">Contact</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#home">Home</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#review-section">About us</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#about-section">How it’s made?</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#products-section">Our products</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#contacts-section">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -135,21 +135,23 @@
   }
 }
 
-.mobile-nav__item {
-  border-top: 1px solid #e18298;
-  padding: 13px 0px;
-
-  & a {
-    font-family: DM Sans, sans-serif;
+.mobile-nav {
+  padding-left: 21px;
+  &__item {
+    border-top: 1px solid #e18298;
+    padding: 13px 0px;
+  }
+  &__link {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
     color: #fff;
     font-style: normal;
-    padding-left: 21px;
 
-    &:hover {
-      color: $accent-colot;
-    }
+    transition: color 250ms $timer-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: #d41443;
   }
 }
