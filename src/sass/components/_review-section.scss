@@ -54,6 +54,7 @@
   }
 }
 .review-section__description {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -101,11 +102,41 @@
   }
 }
 
+.review-section__description p::before {
+  display: block;
+  z-index: 601;
+  width: 60px;
+  content: '';
+  height: 40px;
+
+  background-image: url(../images/quotes.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  position: absolute;
+  top: 28px;
+  left: 61px;
+
+  @media screen and (min-width: 768px) {
+    top: 30px;
+    left: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 32px;
+    left: 50px;
+  }
+}
+
 .review-section__name-from {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
+  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: 30px;
@@ -115,16 +146,27 @@
     line-height: 37px;
   }
 }
-
-.review-section__description::after {
+.review-section__name-from::before {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 32px;
+  height: 4px;
   border-radius: 50%;
-  margin-top: 50px;
+  margin-bottom: 18px;
 
   content: '';
-  background-color: rgba(199, 19, 62, 1);
+  background-image: url(../images/dots.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border-radius: 0%;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
+  }
 }
 
 .slider {
@@ -136,10 +178,6 @@
 
 .slick-dots {
   bottom: -30px !important;
-
-  // @media screen and (min-width: 768px) {
-  //   bottom: -35px;
-  // }
 }
 .slick-dots li button:before {
   font-size: 0px !important;
@@ -153,5 +191,10 @@
 }
 
 .slick-dots li.slick-active button:before {
-  background-color: #d31342;
+  background-image: url(../images/slider-home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border-radius: 0%;
 }
