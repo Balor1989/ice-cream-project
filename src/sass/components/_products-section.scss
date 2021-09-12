@@ -1,5 +1,6 @@
 .products-section{
-    background-color: #E5E5E5;
+    background-color: $background-products;
+    color: $secondary-text-color;
 
     @media screen and (max-width:767px){
         padding-top: 121px;
@@ -30,7 +31,7 @@
     font-family: Titan One;
     text-align: center;
     text-transform: uppercase;
-    color: #FFA5BA;
+    color: $title-color-first;
     margin-bottom: 15px;
     @media screen and (max-width:767px){
         font-size: 18px;
@@ -50,7 +51,7 @@
     font-family: Titan One;
     text-align: center;
     text-transform: uppercase;
-    color: #D41443;
+    color: $title-color-second;
     @media screen and (max-width:767px){
         font-size: 34px;
         line-height: 1.15;
@@ -76,23 +77,35 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $primary-text-color;
-
+    &::after {
+        content: '';
+        display: block;
+        width: 26px;
+        height: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        background-image: url(/images/group-4.png);
+        @media screen and (max-width:1199px){
+            margin-top: 30px;
+        }
+        @media screen and (min-width:1200px){
+            margin-top: 32px;
+        } 
+    }
     @media screen and (max-width:767px){
         font-size: 20px;
         line-height: 1.15;
-        margin-bottom: 30px;
-        padding-top: 161px;
+        margin-top: 161px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){
         font-size: 20px;
         line-height: 1.15;
-        margin-bottom: 30px;
         margin-top: 152px;
     }
     @media screen and (min-width:1200px){
         font-size: 30px;
         line-height: 1.33;
-        margin-bottom: 32px;
         margin-top: 163px;
     } 
 }
@@ -106,6 +119,8 @@
         font-size: 14px;
         line-height: 1.5;
         margin: 30px 40px;
+        width: 200px;
+        height: 124px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){
         font-size: 14px;
@@ -114,6 +129,8 @@
         margin-right: 11px;
         margin-top: 30px;
         margin-bottom: 40px;
+        width: 198px;
+        height: 124px;
     }
     @media screen and (min-width:1200px){
         font-size: 16px;
@@ -122,6 +139,8 @@
         margin-right: 44px;
         margin-top: 32px;
         margin-bottom: 62px;
+        width: 241px;
+        height: 106px; 
     } 
 }
 .products-section__card{
@@ -129,15 +148,12 @@
     border-radius: 24px;
     @media screen and (max-width:767px){
         width: 280px;
-        height: 485px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){
         width: 220px;
-        height: 485px;
     }
     @media screen and (min-width:1200px){
         width: 329px;
-        height: 525px;
     } 
     &:not(:last-child){
         @media screen and (max-width:767px){
@@ -153,12 +169,97 @@
 }
 .products-section__card-pink{
     background: #FFB8CA;
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-image: url(/images/home-pic1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width:767px){
+            height: 252px;
+            bottom: 346px;
+            right: 16px;
+            width: 249px;
+        }
+        @media screen and (min-width:768px) and (max-width:1199px){
+            bottom: 363px;
+            right: 0px;
+            width: 220px;
+            height: 226px;
+        }
+        @media screen and (min-width:1200px){
+            bottom: 400px;
+            right: 0px;
+            width: 335px;
+            height: 335px;
+        }
+
+    }
 }
 .products-section__card-yellow{
     background: #F0D1A5;
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-image: url(/images/home-pic2.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width:767px){
+            height: 252px;
+            bottom: 346px;
+            right: 16px;
+            width: 249px;
+        }
+        @media screen and (min-width:768px) and (max-width:1199px){
+            bottom: 363px;
+            right: 0px;
+            width: 220px;
+            height: 226px;
+        }
+        @media screen and (min-width:1200px){
+            bottom: 400px;
+            right: 0px;
+            width: 335px;
+            height: 335px;
+        }
+    }
 }
 .products-section__card-green{
     background:  #C2E297;
+    &::before{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        background-image: url(/images/home-pic3.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-left: auto;
+        margin-right: auto;
+        @media screen and (max-width:767px){
+            height: 252px;
+            bottom: 346px;
+            right: 16px;
+            width: 249px;
+        }
+        @media screen and (min-width:768px) and (max-width:1199px){
+            bottom: 363px;
+            right: 0px;
+            width: 220px;
+            height: 226px;
+        }
+        @media screen and (min-width:1200px){
+            bottom: 400px;
+            right: 0px;
+            width: 335px;
+            height: 335px;
+        }
+    }
 }
 .products-section__cards{
     display: flex;
@@ -172,24 +273,108 @@
         flex-direction: row;
     }
 }
-.products-section__image{
-    position: absolute;
+.products-section__btn{
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(/images/arrow-right.jpg);
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
     @media screen and (max-width:767px){
-        bottom: 346px;
-        right: 16px;
-        width: 249px;
-        height: 252px;
+        margin-bottom: 41px;
     }
     @media screen and (min-width:768px) and (max-width:1199px){
-        bottom: 363px;
-        right: 0px;
-        width: 220px;
-        height: 226px;
+        margin-bottom: 40px;
     }
     @media screen and (min-width:1200px){
-        bottom: 400px;
-        right: 0px;
-        width: 335px;
-        height: 335px;
+        margin-bottom: 50px;
     }
 }
+//Modal
+
+.backdrop{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &.is-hidden{
+        opacity: 1;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    min-width: 450px;
+    min-height: 581px;
+    background: $primary-text-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .backdrop.is-hidden &{
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+.button-close__icon{
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
+    
+}
+
+.button-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50%;
+    background: $products-card-first;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: currentColor;
+    cursor: pointer;
+    transition: border 250ms $timer-function, color 250ms $timer-function;
+    
+    &:hover,
+    &:focus{
+        border: 1px solid $menu-color;
+        color: $title-color-second;
+    }
+}
+
+/*.form{
+    min-width:450px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $background-light;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+    }
+
+}*/
