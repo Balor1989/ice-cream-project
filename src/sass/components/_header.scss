@@ -22,11 +22,11 @@
   }
 }
 
-.nav-section {
-  //position: relative;
-  display: flex;
-  align-items: center;
-}
+// .nav-section {
+//   //position: relative;
+//   display: flex;
+//   align-items: center;
+// }
 
 .circle {
   height: 345px;
@@ -71,11 +71,15 @@
   align-items: center;
   justify-content: space-between;
   width: -webkit-fill-available;
-  margin-top: 6px;
   @media screen and(min-width: $tablet) {
     padding-top: 37px;
   }
   .nav-section {
+    @media screen and(min-width: $tablet) {
+      padding-top: 37px;
+    }
+    display: block;
+    position: fixed;
     &__btn-modal {
       display: flex;
       align-items: center;
@@ -173,12 +177,18 @@
   color: #fff;
 }
 
-.title-section__title-box {
-  position: absolute;
-  z-index: 20;
-  top: 110px;
+.title-section {
+  &__title-box {
+    position: absolute;
+    z-index: 20;
+    top: 193px;
+    left: 20px;
+    @media screen and(min-width: $tablet) {
+      top: 102px;
+      left: 37px;
+    }
+  }
 }
-
 .hero-title {
   font-family: Titan One;
   font-size: 26px;
@@ -352,7 +362,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 28px;
+    bottom: 0;
     left: 34px;
     z-index: 2;
   }
@@ -404,9 +414,9 @@
   //   }
 }
 
-.nav-section {
-  position: relative;
-}
+// .nav-section {
+//   position: relative;
+// }
 
 .nav-section__btn-box {
   .nav-section__btn-modal {
@@ -424,9 +434,7 @@
 }
 
 .hero-title {
-  position: absolute;
   z-index: 30;
-  top: 193px;
   font-family: Titan One;
   font-size: 26px;
   font-weight: 400;
