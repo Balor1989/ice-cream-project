@@ -222,6 +222,7 @@
   }
   @media screen and(min-width: $desktop) {
     font-size: 38px;
+    padding-top: 84px;
   }
   & p {
     font-size: 48px;
@@ -247,7 +248,9 @@
   @media screen and (min-width: $desktop) {
     margin-top: 25px;
   }
-  .title-section__first-link {
+}
+.title-section {
+  &__first-link {
     width: 62px;
     height: 24px;
     border: transparent;
@@ -255,10 +258,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $accent-colot;
+    background-color: #d41443;
     color: #fff;
+    transition: background-color 250ms $timer-function;
   }
-  .title-section__second-link {
+  &__second-link {
     margin-left: 8px;
     width: 82px;
     height: 24px;
@@ -268,16 +272,17 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    color: $accent-colot;
+    color: #d41443;
+    transition: background-color 250ms $timer-function;
   }
-}
-
-.title-section__first-link:hover {
-  background-color: #c7133e;
-}
-
-.title-section__second-link:hover {
-  background-color: #ecebeb;
+  &__first-link:hover,
+  &__first-link:focus {
+    background-color: #c7133e;
+  }
+  &__second-link:hover,
+  &__second-link:focus {
+    background-color: #ecebeb;
+  }
 }
 
 .title-section__numbers {
