@@ -59,7 +59,6 @@
 .img1 {
   top: 40px;
   left: 20px;
-  z-index: 2;
 
   @media screen and(min-width:768px) {
     top: 86px;
@@ -75,6 +74,7 @@
 .img2 {
   top: 24px;
   left: 62px;
+  z-index: 101;
 
   @media screen and(min-width:768px) {
     top: 53px;
@@ -90,6 +90,7 @@
 .img3 {
   top: 66px;
   left: 62px;
+  z-index: 101;
 
   @media screen and(min-width:768px) {
     top: 142px;
@@ -106,7 +107,7 @@
   top: 0;
   left: 104px;
   width: 80px;
-  z-index: 2;
+  z-index: 102;
 
   @media screen and(min-width:768px) {
     top: 0px;
@@ -175,6 +176,7 @@
 .img8 {
   top: 14px;
   left: 228px;
+  z-index: 103;
 
   @media screen and(min-width:768px) {
     top: 32px;
@@ -190,6 +192,7 @@
 .img9 {
   top: 56px;
   left: 228px;
+  z-index: 103;
 
   @media screen and(min-width:768px) {
     top: 121px;
@@ -222,25 +225,37 @@
 }
 
 .scale1:hover {
-  transform: scale(2); /* Увеличиваем масштаб */
+  transform: translateX(-100%); /* Смещение влево */
 }
 
 .scale2:hover {
-  transform: rotate(720deg); /* Вращение */
+  transform: translateX(100%); /* Смещение вправо */
 }
 
 .scale3:hover {
-  transform: translate(-50px, -100px); /* Смещение */
+  transform: translate(-50%, -100%); /* Смещение влево-вверх*/
 }
 
 .scale4:hover {
-  transform: translate(-30px, 80px); /* Смещение */
+  transform: translate(-50px, 100px); /* Смещение влево-вниз */
 }
 
 .scale5:hover {
-  transform: translateX(-50px); /* Смещение */
+  transform: scale(1.5); /* Увеличение */
 }
 
 .scale6:hover {
-  transform: translateY(80px); /* Смещение */
+  transform: translateY(-100%); /* Смещение */
+}
+
+.scale7:hover {
+  transform: translateY(100%); /* Смещение */
+}
+
+.scale8:hover {
+  transform: translate(50%, -70%); /* Смещение влево-вверх*/
+}
+
+.scale9:hover {
+  transform: translate(50px, 130px); /* Смещение влево-вниз */
 }
