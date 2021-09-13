@@ -9,12 +9,12 @@
     padding-top: 125px;
     padding-bottom: 39px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: none;
     padding-top: 130px;
     padding-bottom: 66px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 125px;
     padding-bottom: 65px;
     background-image: url(../images/splashing-milk_1280.png);
@@ -35,8 +35,8 @@
     width: 768px;
   }
 
-  @media screen and(min-width:1200px) {
-    width: 1200px;
+  @media screen and(min-width:1280px) {
+    width: 1280px;
   }
 }
 
@@ -62,7 +62,7 @@
     font-size: 26px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.33;
     letter-spacing: 0.04em;
@@ -86,7 +86,7 @@
     letter-spacing: 0.04em;
     margin-bottom: 50px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 58px;
     line-height: 1.14;
     letter-spacing: 0.06em;
@@ -103,7 +103,7 @@
     background-image: none;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     padding-left: 57px;
     padding-right: 62px;
   }
@@ -131,7 +131,7 @@
     line-height: 1.78;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.04em;
@@ -150,7 +150,7 @@
     line-height: 1.78;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:1280px) {
     font-size: 14px;
     line-height: 1.92;
     letter-spacing: 0.04em;
@@ -174,7 +174,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 74px;
   }
 }
@@ -203,7 +203,7 @@
     margin-top: 62px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 45px;
   }
   &:hover .about-section__more-icon,
