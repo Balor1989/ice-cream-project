@@ -97,6 +97,10 @@
     @media screen and(min-width: $tablet) {
       padding-top: 37px;
     }
+    @media screen and(min-width: 1280px) {
+      width: 1280px;
+      padding-top: 37px;
+    }
     display: block;
     position: fixed;
     &__btn-modal {
@@ -225,7 +229,7 @@
       z-index: 3;
       padding-top: 137px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       padding-top: 15px;
     }
   }
@@ -348,6 +352,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media screen and (min-width: 1280px) {
+      align-items: center;
+      padding-left: 115px;
+      padding-right: 97px;
+    }
   }
   &__circle {
     position: absolute;
@@ -356,10 +365,10 @@
     height: 16px;
     border-radius: 50%;
     right: 6px;
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
-      right: -25%;
+      right: 97px;
     }
   }
   &__numbers {
@@ -377,6 +386,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
   }
   &__number-box:first-child {
     margin-bottom: 13px;
@@ -386,6 +399,10 @@
     line-height: 1.25;
     text-align: right;
     color: #ffffff;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.15;
+    }
   }
 }
 .title-section--circle {
@@ -420,11 +437,11 @@
     left: 307px;
     //transform: translate(307px, -60px);
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
     height: 538px;
     width: 538px;
-    top: 7.82%;
-    left: 37.11%;
+    top: 53px;
+    left: 475px;
     //transform: translate(307px, -31px);
   }
 }
@@ -440,8 +457,8 @@
     left: 378px;
   }
   @media screen and (min-width: 1280px) {
-    top: 15.79%;
-    left: 46.41%;
+    top: 107px;
+    left: 594px;
   }
 }
 // .hero-img--desktop {
@@ -469,7 +486,7 @@
   @media screen and (min-width: 1280px) {
     display: block;
     position: absolute;
-    bottom: 0%;
+    top: 432px;
     right: 109px;
     z-index: 2;
   }
@@ -485,23 +502,16 @@
     z-index: 2;
   }
   @media screen and (min-width: $desktop) {
-    bottom: 45px;
-    left: 31px;
-  }
-  &__img {
-    display: block;
-    @media screen and(min-width: $desktop) {
-      display: none;
-    }
+    top: 420px;
+    left: 77px;
   }
 }
-
-.milk-box__img--desktop {
-  display: none;
-  @media screen and(min-width: $desktop) {
-    display: block;
-  }
-}
+// .milk-box__img--desktop {
+//   display: none;
+//   @media screen and(min-width: $desktop) {
+//     display: block;
+//   }
+// }
 
 .milk-box--wrrap {
   display: flex;
