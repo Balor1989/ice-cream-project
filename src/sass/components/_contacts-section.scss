@@ -24,6 +24,9 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
     @media screen and (min-width: 768px) {
       width: 768px;
     }
@@ -134,20 +137,18 @@
 }
 .card-box {
   text-align: center;
-  @media screen and (min-width: 768px) {
-    padding: 0;
-  }
-
   &__card {
+    text-align: left;
     max-width: 220px;
     border-radius: 24px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
 
     background-color: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    @media screen and (min-width: 768px) {
+      max-width: 210px;
+    }
     @media screen and (min-width: 1200px) {
       max-width: 330px;
     }
