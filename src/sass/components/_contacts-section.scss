@@ -290,3 +290,12 @@
     color: #d41443;
   }
 }
+// Slider
+.slider-contacts .slick-dots li.slick-active button::before {
+  background-image: url(../images/location.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border-radius: 0%;
+}
