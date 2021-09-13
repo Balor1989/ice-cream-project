@@ -34,48 +34,54 @@
         </nav>
 
         <div class="circle"></div>
-        <img class="hero-img--mobile"
-        srcset="./images/ice-cream_171.png 1x, ./images/ice-cream_171@2x.png 2x, ./images/ice-cream_171@3x.png 3x"
-        src="./images/ice-cream_171.png"
-        alt="ice-cream">
-        <img class="hero-img--tablet"
+        <picture>
+            <source srcset="./images/ice-cream_171.png 1x, ./images/ice-cream_171@2x.png 2x" media="(max-width:767px)"
+                sizes="(min-width:171px)">
+            <source srcset="./images/ice-cream_143.png 1x, ./images/ice-cream_143@2x.png 2x"
+                media="(max-width:1279px)" sizes="(min-width:143px)">
+            <source srcset="./images/ice-cream_236.png 1x, ./images/ice-cream_236@2x.png 2x"
+                media="(min-width:1280px)" sizes="(min-width:236px)">
+            <img  src="./images/ice-cream_171.png" class="hero-img--mobile" alt="ice-cream">
+        </picture>
+        <!-- <img class="hero-img--tablet"
         srcset="./images/ice-cream_143.png 1x, ./images/ice-cream_143@2x.png 2x, ./images/ice-cream_143@3x.png 3x"
         src="./images/ice-cream_143.png"
         alt="ice-cream">
         <img class="hero-img--desktop"
         srcset="./images/ice-cream_236.png 1x, ./images/ice-cream_236@2x.png 2x, ./images/ice-cream_236@3x.png 3x"
         src="./images/ice-cream_236.png"
-        alt="ice-cream">
+        alt="ice-cream"> -->
         <div class="title-section">
             <div class="title-section__title-box">
-                <h1 class="hero-title">ice cream <br> made with <p>passion</p></h1>
-                <div class="title-section__btn-box">
-                    <a href="#products-section" class="title-section__first-link">Products</a>
-                    <a href="#about-section" class="title-section__second-link">How it’s made?</a>
+                <div>
+                    <h1 class="hero-title">ice cream <br> made with <p>passion</p></h1>
+                    <div class="title-section__btn-box">
+                        <a href="#products-section" class="title-section__first-link">Products</a>
+                        <a href="#about-section" class="title-section__second-link">How it’s made?</a>
+                    </div>
                 </div>
-            </div>
-            <div class="title-section__numbers">
-                <div class="title-section__number-box">
-                    <div class="title-section--circle"></div>
-                    <h2 class="title-section__number-title">16</h2>
-                    <p class="title-section__number-description">cafes</p>
-                </div>
-                <div class="title-section__number-box">
-                    <div class="title-section--circle"></div>
-                    <h2 class="title-section__number-title">23</h2>
-                    <p class="title-section__number-description">food trucks</p>
+                <div class="title-section__numbers">
+                    <div class="title-section__number-box">
+                        <div class="title-section__circle"></div>
+                        <h2 class="title-section__number-title">16</h2>
+                        <p class="title-section__number-description">cafes</p>
+                    </div>
+                    <div class="title-section__number-box">
+                        <div class="title-section__circle"></div>
+                        <h2 class="title-section__number-title">23</h2>
+                        <p class="title-section__number-description">food trucks</p>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="milk-box">
-            <img class="milk-box__img--tablet"
-            srcset="./images/milk_124.png 1x, ./images/milk_124@2x.png 2x, ./images/milk_124@3x.png 3x"
-            src="./images/milk_124.png"
-            alt="milk">
-            <img class="milk-box__img--desktop"
-            srcset="./images/milk_188.png 1x, ./images/milk_188@2x.png 2x, ./images/milk_188@3x.png 3x"
-            src="./images/milk_188.png"
-            alt="milk">
+            <picture>
+            <source srcset="./images/milk_124.png 1x, ./images/milk_124@2x.png 2x" media="(max-width:1279px)"
+                sizes="(min-width:124px)">
+            <source srcset="./images/milk_188.png 1x, ./images/milk_188@2x.png 2x" media="(min-width:1280px)"
+                sizes="(min-width:188px)">
+            <img src="./images/milk_124.png" class="milk-box__img" alt="ice-cream">
+            </picture>
             <div class="milk-box--wrrap">
 
                 <p class="milk-box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
@@ -86,14 +92,11 @@
                 </a>
             </div>
         </div>
-        <img class="galochka--tablet"
-            srcset="./images/galochka_168.png 1x, ./images/galochka_168@2x.png 2x, ./images/galochka_168@3x.png 3x"
-            src="./images/galochka_168.png"
-            alt="galochka__tablet">
-        <img class="galochka--desktop"
-            srcset="./images/galochka_239.png 1x, ./images/galochka_239@2x.png 2x, ./images/galochka_239@3x.png 3x"
-            src="./images/galochka_239.png"
-            alt="galochka__desktop">
+        <source srcset="./images/galochka_168.png 1x, ./images/galochka_168@2x.png 2x" media="(max-width:1279px)"
+            sizes="(min-width:168px)">
+        <source srcset="./images/galochka_239.png 1x, ./images/galochka_239@2x.png 2x" media="(min-width:1280px)"
+            sizes="(min-width:239px)">
+        <img src="./images/galochka_168.png" class="galochka--tablet" alt="girl">
     </div>
 <!-- Мобильное меню!!! -->
     <div class="menu-container js-menu-container" id="mobile-menu">
