@@ -1,6 +1,6 @@
 .modal-pink{
     position: absolute;
-    padding: 40px;
+    padding: 20px;
     top: 50%;
     left: 50%;
     overflow: auto;
@@ -15,11 +15,15 @@
         transform: translate(-50%, -50%) scale(1.1);
     }
     @media screen and (max-width:767px){
-        width: 400px;
-        height: 550px;
+        width: 380px;
+        height: 500px;
     }
     @media screen and (min-width:768px){
-        width: 600px;
-        height: 700px;
+        width: 530px;
+        height: 620px;
+    }
+    @media screen and (min-width:1200px){
+        width: 575px;
+        height: 685px;
     }
 }
