@@ -75,14 +75,13 @@
             </div>
         </div>
         <div class="milk-box">
-            <img class="milk-box__img--tablet"
-            srcset="./images/milk_124.png 1x, ./images/milk_124@2x.png 2x, ./images/milk_124@3x.png 3x"
-            src="./images/milk_124.png"
-            alt="milk">
-            <img class="milk-box__img--desktop"
-            srcset="./images/milk_188.png 1x, ./images/milk_188@2x.png 2x, ./images/milk_188@3x.png 3x"
-            src="./images/milk_188.png"
-            alt="milk">
+            <picture>
+            <source srcset="./images/milk_124.png 1x, ./images/milk_124@2x.png 2x" media="(max-width:1279px)"
+                sizes="(min-width:124px)">
+            <source srcset="./images/milk_188.png 1x, ./images/milk_188@2x.png 2x" media="(min-width:1280px)"
+                sizes="(min-width:188px)">
+            <img src="./images/milk_124.png" class="milk-box__img" alt="ice-cream">
+            </picture>
             <div class="milk-box--wrrap">
 
                 <p class="milk-box__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
@@ -93,14 +92,11 @@
                 </a>
             </div>
         </div>
-        <img class="galochka--tablet"
-            srcset="./images/galochka_168.png 1x, ./images/galochka_168@2x.png 2x, ./images/galochka_168@3x.png 3x"
-            src="./images/galochka_168.png"
-            alt="galochka__tablet">
-        <img class="galochka--desktop"
-            srcset="./images/galochka_239.png 1x, ./images/galochka_239@2x.png 2x, ./images/galochka_239@3x.png 3x"
-            src="./images/galochka_239.png"
-            alt="galochka__desktop">
+        <source srcset="./images/galochka_168.png 1x, ./images/galochka_168@2x.png 2x" media="(max-width:1279px)"
+            sizes="(min-width:168px)">
+        <source srcset="./images/galochka_239.png 1x, ./images/galochka_239@2x.png 2x" media="(min-width:1280px)"
+            sizes="(min-width:239px)">
+        <img src="./images/galochka_168.png" class="galochka--tablet" alt="girl">
     </div>
 <!-- Мобильное меню!!! -->
     <div class="menu-container js-menu-container" id="mobile-menu">

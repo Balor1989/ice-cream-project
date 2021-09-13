@@ -397,10 +397,10 @@
   right: -57px;
   //transform: translate(11.25%, 16.53%);
   @media screen and (min-width: $tablet) {
-    height: 324px;
+    height: 322px;
     width: 324px;
     top: 7.77%;
-    left: 39.97%;
+    left: 307px;
     //transform: translate(307px, -60px);
   }
   @media screen and (min-width: $desktop) {
@@ -419,8 +419,8 @@
   // transform: translateX(-60%);
   z-index: 2;
   @media screen and(min-width:$tablet) {
-    top: 15%;
-    left: 49.22%;
+    top: 62px;
+    left: 378px;
   }
   @media screen and (min-width: 1280px) {
     top: 15.79%;
@@ -442,18 +442,14 @@
 
 .galochka--tablet {
   display: none;
-  @media screen and(min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     position: absolute;
     bottom: -159px;
     right: 34px;
     z-index: 2;
   }
-}
-
-.galochka--desktop {
-  display: none;
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
     display: block;
     position: absolute;
     bottom: 0%;
@@ -468,19 +464,18 @@
     display: flex;
     align-items: flex-end;
     position: absolute;
-    bottom: 28px;
+    top: 250px;
     z-index: 2;
   }
   @media screen and (min-width: $desktop) {
     bottom: 45px;
     left: 31px;
   }
-}
-
-.milk-box__img--tablet {
-  display: block;
-  @media screen and(min-width: $desktop) {
-    display: none;
+  &__img {
+    display: block;
+    @media screen and(min-width: $desktop) {
+      display: none;
+    }
   }
 }
 
