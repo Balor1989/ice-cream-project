@@ -6,7 +6,7 @@
   height: 100%;
   background-color: rgba(255, 184, 202, 0.3);
   opacity: 1;
-  transition: opacity 500ms $timer-function;
+  transition: opacity 250ms $timer-function;
   z-index: 801;
 }
 .backdrop-mobile.is-hidden {
@@ -34,8 +34,8 @@
     height: 380px;
   }
   @media screen and (min-width: 1200px) {
-    width: 900px;
-    height: 710px;
+    width: 450px;
+    height: 380px;
   }
   &__close-box {
     position: relative;
