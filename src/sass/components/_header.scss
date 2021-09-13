@@ -225,7 +225,7 @@
       z-index: 3;
       padding-top: 137px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       padding-top: 15px;
     }
   }
@@ -496,12 +496,12 @@
   }
 }
 
-.milk-box__img--desktop {
-  display: none;
-  @media screen and(min-width: $desktop) {
-    display: block;
-  }
-}
+// .milk-box__img--desktop {
+//   display: none;
+//   @media screen and(min-width: $desktop) {
+//     display: block;
+//   }
+// }
 
 .milk-box--wrrap {
   display: flex;
