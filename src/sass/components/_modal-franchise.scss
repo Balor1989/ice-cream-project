@@ -31,7 +31,7 @@
     width: 500px;
     height: 620px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 750px;
     height: 650px;
   }
@@ -61,7 +61,7 @@
       width: 25px;
       height: 25px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
     }
@@ -94,19 +94,19 @@
     @media screen and (min-width: 768px) {
       font-size: 30px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 34px;
     }
   }
   &__content {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       display: flex;
       align-items: center;
       justify-content: space-around;
     }
   }
   &__image {
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1279px) {
       display: none;
     }
   }
@@ -114,7 +114,7 @@
 .modal-form {
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 350px;
   }
   &__name,
@@ -175,7 +175,7 @@
       height: 24px;
       transform: translateY(25%);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 22px;
       height: 22px;
       transform: translateY(25%);
