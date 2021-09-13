@@ -6,6 +6,7 @@
   height: 100%;
   background-color: $modal-backdrop;
   opacity: 1;
+  transition: opacity 500ms $timer-function;
 }
 .backdrop-location.is-hidden {
   opacity: 0;
