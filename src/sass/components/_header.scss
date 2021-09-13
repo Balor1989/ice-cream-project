@@ -1,26 +1,32 @@
 .header {
   background-color: $breand-color;
-  //position: relative;
   margin-left: auto;
   margin-right: auto;
-  //height: 502px;
-  height: 100vh;
+  height: 502px;
   overflow: hidden;
   padding: 0px 20px;
-  //display: flex;
   @media screen and (min-width: $tablet) {
-    //height: 399px;
+    height: 399px;
     padding: 0px 34px;
   }
   @media screen and (min-width: $desktop) {
-    //height: 665px;
+    height: 665px;
     padding: 0px 46px;
   }
-}
-
-.header__box{
-  position: relative;
-  height: 100vh;
+  &__box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+    }
+  }
 }
 
 // .nav-section {
