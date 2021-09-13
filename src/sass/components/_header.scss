@@ -1,20 +1,26 @@
 .header {
   background-color: $breand-color;
-  position: relative;
+  //position: relative;
   margin-left: auto;
   margin-right: auto;
-  height: 502px;
+  //height: 502px;
+  height: 100vh;
   overflow: hidden;
   padding: 0px 20px;
   //display: flex;
   @media screen and (min-width: $tablet) {
-    height: 399px;
+    //height: 399px;
     padding: 0px 34px;
   }
   @media screen and (min-width: $desktop) {
     height: 665px;
     padding: 0px 46px;
   }
+}
+
+.header__box{
+  position: relative;
+  height: 100vh;
 }
 
 // .nav-section {
@@ -31,7 +37,8 @@
   position: absolute;
   z-index: 1;
   top: 16.53%;
-  left: 11.25%;
+  //left: 11.25%;
+  right: -64px;
   //transform: translate(11.25%, 16.53%);
   @media screen and (min-width: $tablet) {
     height: 324px;
@@ -330,7 +337,7 @@
     align-items: flex-end;
     position: absolute;
     top: 94px;
-    right: 34px;
+    right: 0px;
     z-index: 20;
   }
   @media screen and (min-width: $desktop) {
@@ -357,7 +364,8 @@
 .hero-img--mobile {
   position: absolute;
   top: 18.33%;
-  left: 36.56%;
+  right: 32px;
+  //left: 36.56%;
   // transform: translateX(-60%);
   z-index: 2;
   @media screen and (min-width: $tablet) {
@@ -419,13 +427,11 @@
     align-items: flex-end;
     position: absolute;
     bottom: 28px;
-    left: 34px;
     z-index: 2;
   }
   @media screen and (min-width: $desktop) {
     bottom: 45px;
-    left: 77px;
-    align-items: center;
+    left: 31px;
   }
 }
 
@@ -448,6 +454,7 @@
   flex-direction: column;
   @media screen and (min-width: $desktop) {
     margin-left: 30px;
+    padding-bottom: 22px;
   }
 }
 
