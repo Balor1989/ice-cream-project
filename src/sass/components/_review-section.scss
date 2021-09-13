@@ -173,7 +173,7 @@
   opacity: 1 !important;
 }
 
-.slider .slick-dots li.slick-active button:before {
+.slider .slick-dots li.slick-active button::before {
   background-image: url(../images/slider-home.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -181,6 +181,11 @@
   background-size: contain;
   border-radius: 0%;
 }
+.slider .slick-dots li button::before {
+  width: 12px;
+  height: 12px;
+}
+
 .review-section__description-part {
   display: inline-block;
   font-family: DM Sans;
@@ -192,6 +197,7 @@
     font-size: 12px;
     line-height: 2.58;
   }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 16px;
     line-height: 2.14;

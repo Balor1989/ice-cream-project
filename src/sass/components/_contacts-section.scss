@@ -292,6 +292,9 @@
   }
 }
 // Slider
+.slider-contacts .slick-dots {
+  padding-top: 10px;
+}
 .slider-contacts .slick-dots li.slick-active button::before {
   background-image: url(../images/location.svg);
   background-position: center;
@@ -299,4 +302,9 @@
   background-color: transparent;
   background-size: contain;
   border-radius: 0%;
+}
+.slider-contacts .slick-dots li button::before {
+  background-color: #ffb8ca;
+  width: 18px;
+  height: 18px;
 }

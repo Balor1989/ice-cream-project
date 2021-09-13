@@ -7,6 +7,7 @@
   background-color: $modal-backdrop;
   opacity: 1;
   transition: opacity 500ms $timer-function;
+  z-index: 820;
 }
 .backdrop-location.is-hidden {
   opacity: 0;
@@ -15,7 +16,7 @@
 .modal-location {
   position: absolute;
   width: 300px;
-  height: 350px;
+  height: 280px;
   top: 50%;
   left: 50%;
 
@@ -25,15 +26,15 @@
   box-shadow: 0px 4px 4px rgba(212, 20, 67, 0.47);
   @media screen and (min-width: 480px) {
     width: 400px;
-    height: 450px;
+    height: 360px;
   }
   @media screen and (min-width: 768px) {
     width: 650px;
-    height: 580px;
+    height: 500px;
   }
   @media screen and (min-width: 1200px) {
     width: 900px;
-    height: 710px;
+    height: 650px;
   }
   &__close-box {
     position: relative;
@@ -78,12 +79,9 @@
   &__content {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 30px;
-    @media screen and (min-width: 480px) {
-      padding-top: 40px;
-    }
-    @media screen and (min-width: 768px) {
-      padding-top: 50px;
+    padding-top: 20px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 35px;
     }
   }
   &__image {
@@ -91,7 +89,7 @@
     margin-right: auto;
   }
   &__title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     font-family: Titan One;
     font-weight: normal;
@@ -199,13 +197,71 @@
       right: 85px;
     }
   }
+  &__miami {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 122px;
+    right: 26px;
+
+    fill: $map-marker;
+    transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 25px;
+      height: 25px;
+      top: 170px;
+      right: 38px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: 283px;
+      right: 72px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: 380px;
+      right: 121px;
+    }
+  }
+  &__seattle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    left: 40px;
+
+    fill: $map-marker;
+    transition: fill 250ms $timer-function;
+    @media screen and (min-width: 480px) {
+      width: 25px;
+      height: 25px;
+      top: -12px;
+      left: 57px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 35px;
+      height: 35px;
+      top: -10px;
+      left: 103px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 45px;
+      height: 45px;
+      top: -15px;
+      left: 163px;
+    }
+  }
   &__chicago:hover,
   &__los-angeles:hover,
-  &__new-york:hover {
+  &__new-york:hover,
+  &__miami:hover,
+  &__seattle:hover {
     fill: $map-marker-hover;
   }
   &__subtitle {
-    margin-top: 50px;
+    margin-top: 20px;
     font-family: Titan One;
     font-weight: normal;
     font-size: 18px;
@@ -219,7 +275,7 @@
       font-size: 25px;
     }
     @media screen and (min-width: 768px) {
-      font-size: 30px;
+      font-size: 27px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 34px;
