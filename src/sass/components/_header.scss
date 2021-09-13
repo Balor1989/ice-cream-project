@@ -1,22 +1,19 @@
 .header {
   background-color: $breand-color;
-  margin-left: auto;
-  margin-right: auto;
   height: 502px;
   overflow: hidden;
-  padding: 0px 20px;
   @media screen and (min-width: $tablet) {
     height: 399px;
-    padding: 0px 34px;
   }
   @media screen and (min-width: $desktop) {
     height: 665px;
-    padding: 0px 46px;
   }
   &__box {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     @media screen and (min-width: 480px) {
       width: 480px;
     }
@@ -42,9 +39,9 @@
   border-radius: 50%;
   position: absolute;
   z-index: 1;
-  top: 16.53%;
+  top: 23%;
   //left: 11.25%;
-  right: -64px;
+  right: -57px;
   //transform: translate(11.25%, 16.53%);
   @media screen and (min-width: $tablet) {
     height: 324px;
@@ -369,7 +366,7 @@
 
 .hero-img--mobile {
   position: absolute;
-  top: 18.33%;
+  bottom: -154px;
   right: 32px;
   //left: 36.56%;
   // transform: translateX(-60%);
