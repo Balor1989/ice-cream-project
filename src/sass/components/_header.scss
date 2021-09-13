@@ -368,7 +368,7 @@
     @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
-      right: -25%;
+      right: 97px;
     }
   }
   &__numbers {
@@ -386,6 +386,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    @media screen and (min-width: 1280px) {
+      font-size: 46px;
+      line-height: 1.15;
+    }
   }
   &__number-box:first-child {
     margin-bottom: 13px;
@@ -395,6 +399,10 @@
     line-height: 1.25;
     text-align: right;
     color: #ffffff;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.15;
+    }
   }
 }
 .title-section--circle {
@@ -478,7 +486,7 @@
   @media screen and (min-width: 1280px) {
     display: block;
     position: absolute;
-    bottom: 0%;
+    top: 432px;
     right: 109px;
     z-index: 2;
   }
@@ -494,16 +502,10 @@
     z-index: 2;
   }
   @media screen and (min-width: $desktop) {
-    bottom: 45px;
-    left: 31px;
-  }
-  &__img {
-    display: block;
-    @media screen and(min-width: $desktop) {
-    }
+    top: 420px;
+    left: 77px;
   }
 }
-
 // .milk-box__img--desktop {
 //   display: none;
 //   @media screen and(min-width: $desktop) {
