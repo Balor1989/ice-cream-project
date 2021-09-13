@@ -97,6 +97,10 @@
     @media screen and(min-width: $tablet) {
       padding-top: 37px;
     }
+    @media screen and(min-width: 1280px) {
+      width: 1280px;
+      padding-top: 37px;
+    }
     display: block;
     position: fixed;
     &__btn-modal {
@@ -348,6 +352,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media screen and (min-width: 1280px) {
+      align-items: center;
+      padding-left: 115px;
+      padding-right: 97px;
+    }
   }
   &__circle {
     position: absolute;
@@ -356,7 +365,7 @@
     height: 16px;
     border-radius: 50%;
     right: 6px;
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
       width: 30px;
       height: 30px;
       right: -25%;
@@ -420,11 +429,11 @@
     left: 307px;
     //transform: translate(307px, -60px);
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1280px) {
     height: 538px;
     width: 538px;
-    top: 7.82%;
-    left: 37.11%;
+    top: 53px;
+    left: 475px;
     //transform: translate(307px, -31px);
   }
 }
@@ -440,8 +449,8 @@
     left: 378px;
   }
   @media screen and (min-width: 1280px) {
-    top: 15.79%;
-    left: 46.41%;
+    top: 107px;
+    left: 594px;
   }
 }
 // .hero-img--desktop {
@@ -491,7 +500,6 @@
   &__img {
     display: block;
     @media screen and(min-width: $desktop) {
-      display: none;
     }
   }
 }
