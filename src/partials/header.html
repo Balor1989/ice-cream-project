@@ -34,18 +34,23 @@
         </nav>
 
         <div class="circle"></div>
-        <img class="hero-img--mobile"
-        srcset="./images/ice-cream_171.png 1x, ./images/ice-cream_171@2x.png 2x, ./images/ice-cream_171@3x.png 3x"
-        src="./images/ice-cream_171.png"
-        alt="ice-cream">
-        <img class="hero-img--tablet"
+        <picture>
+            <source srcset="./images/ice-cream_171.png 1x, ./images/ice-cream_171@2x.png 2x" media="(max-width:767px)"
+                sizes="(min-width:171px)">
+            <source srcset="./images/ice-cream_143.png 1x, ./images/ice-cream_143@2x.png 2x"
+                media="(max-width:1279px)" sizes="(min-width:143px)">
+            <source srcset="./images/ice-cream_236.png 1x, ./images/ice-cream_236@2x.png 2x"
+                media="(min-width:1280px)" sizes="(min-width:236px)">
+            <img  src="./images/ice-cream_171.png" class="hero-img--mobile" alt="ice-cream">
+        </picture>
+        <!-- <img class="hero-img--tablet"
         srcset="./images/ice-cream_143.png 1x, ./images/ice-cream_143@2x.png 2x, ./images/ice-cream_143@3x.png 3x"
         src="./images/ice-cream_143.png"
         alt="ice-cream">
         <img class="hero-img--desktop"
         srcset="./images/ice-cream_236.png 1x, ./images/ice-cream_236@2x.png 2x, ./images/ice-cream_236@3x.png 3x"
         src="./images/ice-cream_236.png"
-        alt="ice-cream">
+        alt="ice-cream"> -->
         <div class="title-section">
             <div class="title-section__title-box">
                 <div>
