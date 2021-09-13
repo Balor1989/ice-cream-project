@@ -7,7 +7,6 @@
   background-color: $modal-backdrop;
   opacity: 1;
   transition: opacity 500ms $timer-function;
-  z-index: 820;
 }
 .backdrop-location.is-hidden {
   opacity: 0;
