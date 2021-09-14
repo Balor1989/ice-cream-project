@@ -368,15 +368,16 @@
   margin: 0 auto;
   fill: currentColor;
   @media screen and (max-width:479px){
-    background-size: 10px 10px;
+  width: 12px;
+  height: 12px;
   }
   @media screen and (min-width:480px) and (max-width: 767px) {
   width: 15px;
   height: 15px;
   }
   @media screen and (min-width: 768px) {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   }
 }
 .button-close {
@@ -392,23 +393,13 @@
   &:focus {
     color: $primary-text-color;
   }
-  @media screen and (max-width:479px){
-    right: 10px;
-    top: 10px;
-    width: 15px;
-    height: 15px;
-    }
-    @media screen and (min-width:480px) and (max-width: 767px) {
-      right: 15px;
-      top: 15px;
-      width: 20px;
-      height: 20px;
+  @media screen and (max-width: 767px){
+    right: 15px;
+    top: 15px;
     }
     @media screen and (min-width: 768px) {
       right: 20px;
       top: 20px;
-      width: 30px;
-      height: 30px;
     }
 }
 .form__title {
