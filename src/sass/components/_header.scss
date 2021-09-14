@@ -549,7 +549,7 @@
     background-color: #fff;
     transition: background-color 250ms $timer-function;
     margin-top: 7px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 26px;
       height: 26px;
       margin-top: 20px;
@@ -560,7 +560,7 @@
     height: 10px;
     fill: #d41443;
     transition: transform 250ms $timer-function;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 12px;
       height: 12px;
     }
