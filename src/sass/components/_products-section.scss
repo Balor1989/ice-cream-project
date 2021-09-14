@@ -5,7 +5,7 @@
     padding-top: 121px;
     padding-bottom: 98px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) {
     padding-top: 122px;
     padding-bottom: 112px;
   }
@@ -18,59 +18,10 @@
   margin: auto;
   padding: 0px 15px;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     width: 480px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1279px) {
-    width: 1280px;
-  }
-}
-.products-section__overhead {
-  font-family: Titan One;
-  text-align: center;
-  text-transform: uppercase;
-  color: $title-color-first;
-  margin-bottom: 15px;
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
-    line-height: 1.17;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    font-size: 26px;
-    line-height: 1.15;
-  }
-  @media screen and (min-width: 1279px) {
-    font-size: 30px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
-  }
-
-  // @media screen and (max-width: 767px) {
-  //   padding-top: 121px;
-  //   padding-bottom: 98px;
-  // }
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   padding-top: 122px;
-  //   padding-bottom: 112px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 127px;
-  //   padding-bottom: 119px;
-  // }
-}
-.products-section__box {
-  margin: auto;
-  padding: 0px 15px;
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: 320px;
-  }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) {
     width: 768px;
   }
   @media screen and (min-width: 1280px) {
@@ -83,11 +34,43 @@
   text-transform: uppercase;
   color: $title-color-first;
   margin-bottom: 15px;
-  @media screen and (max-width: 767px) {
-    font-size: 18px;
-    line-height: 1.17;
+  font-size: 18px;
+  line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+  }
+}
+.products-section__box {
+  margin: auto;
+  padding: 0px 15px;
+  @media screen and (min-width: 320px){
+    width: 320px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+.products-section__overhead {
+  font-family: Titan One;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color-first;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.17;
+  @media screen and (min-width: 768px){
     font-size: 26px;
     line-height: 1.15;
   }
@@ -102,13 +85,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $title-color-second;
-  @media screen and (max-width: 767px) {
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    margin-bottom: 144px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  margin-bottom: 144px;
+  @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -127,6 +108,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $primary-text-color;
+  font-size: 20px;
+  line-height: 1.15;
+  margin-top: 161px;
   &::after {
     content: '';
     display: block;
@@ -136,19 +120,11 @@
     margin-right: auto;
     margin-top: 30px;
     background-image: url(/images/group-4.png);
-    @media screen and (max-width: 1279px) {
-      margin-top: 30px;
-    }
     @media screen and (min-width: 1280px) {
       margin-top: 32px;
     }
   }
-  @media screen and (max-width: 767px) {
-    font-size: 20px;
-    line-height: 1.15;
-    margin-top: 161px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px){
     font-size: 20px;
     line-height: 1.15;
     margin-top: 152px;
@@ -165,13 +141,11 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $primary-text-color;
-  @media screen and (max-width: 767px) {
-    font-size: 14px;
-    line-height: 1.5;
-    margin: 30px 40px;
-    height: 124px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 30px 40px;
+  height: 124px;
+  @media screen and (min-width: 768px){
     font-size: 14px;
     line-height: 1.78;
     margin-left: 11px;
@@ -194,24 +168,20 @@
 .products-section__card {
   position: relative;
   border-radius: 24px;
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    width: 100%;
-  }
+  width: 100%;
   @media screen and (min-width: 1280px) {
     width: 335px;
   }
+  @media screen and (min-width: 768px){
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+  }
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 130px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-      margin-right: 20px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-right: 30px;
+    margin-bottom: 130px;
+    @media screen and (min-width: 768px){
+      margin-bottom: 0px
     }
   }
 }
@@ -226,14 +196,12 @@
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 767px) {
-      height: 252px;
-      bottom: 346px;
-      right: 15px;
-      left: 15px;
-      width: 249px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 252px;
+    bottom: 346px;
+    right: 15px;
+    left: 15px;
+    width: 249px;
+    @media screen and (min-width: 768px) {
       bottom: 363px;
       right: 0px;
       width: 220px;
@@ -247,7 +215,7 @@
     }
   }
 }
-.products-section__card-yellow {
+.products-section__card-yellow{
   background: $products-card-second;
   &::before {
     content: '';
@@ -258,14 +226,13 @@
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 767px) {
-      height: 252px;
-      bottom: 346px;
-      right: 15px;
-      left: 15px;
-      width: 249px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 252px;
+    bottom: 346px;
+    right: 15px;
+    left: 15px;
+    width: 249px;
+  
+    @media screen and (min-width: 768px){
       bottom: 363px;
       right: 0px;
       width: 220px;
@@ -290,20 +257,18 @@
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: 767px) {
-      height: 252px;
-      bottom: 346px;
-      right: 15px;
-      left: 15px;
-      width: 249px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 252px;
+    bottom: 346px;
+    right: 15px;
+    left: 15px;
+    width: 249px;
+    @media screen and (min-width: 768px){
       bottom: 363px;
       right: 0px;
       width: 220px;
       height: 226px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1280px){
       bottom: 400px;
       right: 0px;
       width: 335px;
@@ -338,10 +303,8 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 41px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  margin-bottom: 41px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
@@ -367,11 +330,9 @@
   display: block;
   margin: 0 auto;
   fill: currentColor;
-  @media screen and (max-width:479px){
   width: 12px;
   height: 12px;
-  }
-  @media screen and (min-width:480px) and (max-width: 767px) {
+  @media screen and (min-width:480px) {
   width: 15px;
   height: 15px;
   }
@@ -388,19 +349,18 @@
   cursor: pointer;
   background-color: transparent;
   transition: color 250ms $timer-function;
+  right: 15px;
+  top: 15px;
+  @media screen and (min-width: 768px) {
+    right: 20px;
+    top: 20px;
+  }
 
   &:hover,
   &:focus {
     color: $primary-text-color;
   }
-  @media screen and (max-width: 767px){
-    right: 15px;
-    top: 15px;
-    }
-    @media screen and (min-width: 768px) {
-      right: 20px;
-      top: 20px;
-    }
+
 }
 .form__title {
   font-family: Titan One;
@@ -417,12 +377,10 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  @media screen and (max-width:479px){
-    font-size: 15px;
-    line-height: 1.15;
-    margin-bottom: 10px;
-}
-  @media screen and (min-width:480px) and (max-width: 767px) {
+  font-size: 15px;
+  line-height: 1.15;
+  margin-bottom: 10px;
+  @media screen and (min-width:480px){
     font-size: 20px;
     line-height: 1.15;
     margin-bottom: 20px;
@@ -440,15 +398,13 @@
   text-transform: uppercase;
   color: $title-color-second;
   margin-right: 5px;
-  @media screen and (max-width:479px){
-    font-size: 10px;
-    line-height: 1.1;
-}
-  @media screen and (min-width:480px) and (max-width: 767px) {
+  font-size: 10px;
+  line-height: 1.1;
+  @media screen and (min-width:480px){
     font-size: 15px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px){
     font-size: 15px;
     line-height: 1.15;
   }
@@ -463,15 +419,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $primary-text-color;
-  @media screen and (max-width:479px){
-    font-size: 13px;
-    line-height: 1.1;
-}
-  @media screen and (min-width:480px) and (max-width: 767px) {
+  font-size: 13px;
+  line-height: 1.1;
+  @media screen and (min-width:480px){
     font-size: 14px;
     line-height: 1.5;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px){
     font-size: 14px;
     line-height: 1.78;
   }
@@ -480,23 +434,20 @@
     line-height: 1.75;
   }
   &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @media screen and (min-width: 768px){
       margin-bottom: 15px;
     }
     @media screen and (min-width: 1280px) {
       margin-bottom: 20px;
     }
   }
-}
+
 .form__image {
-  @media screen and (max-width:479px){
-    height: 100px;
-    width: 100px;
-}
-  @media screen and (min-width:480px) and (max-width: 767px) {
+height: 100px;
+width: 100px;
+  @media screen and (min-width:480px) {
     height: 152px;
     width: 149px;
   }
@@ -509,9 +460,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
-  }
+  margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
