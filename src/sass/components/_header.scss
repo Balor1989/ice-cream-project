@@ -42,6 +42,12 @@
   top: 18%;
   //left: 11.25%;
   right: -57px;
+  animation-name: changeBgColor;
+  animation-duration: 4000ms;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+
   //transform: translate(11.25%, 16.53%);
   @media screen and (min-width: $tablet) {
     height: 324px;
@@ -56,6 +62,23 @@
     top: 7.82%;
     left: 37.11%;
     //transform: translate(307px, -31px);
+  }
+}
+.circle:hover {
+  animation-play-state: paused;
+}
+
+@keyframes changeBgColor {
+  20% {
+    background-color: #d414446c;
+  }
+
+  50% {
+    background-color: #ffb8ca;
+  }
+
+  100% {
+    background-color: #ffa5ba;
   }
 }
 
@@ -179,6 +202,19 @@
   padding-top: 6px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: rotateY(0deg);
+
+  animation: rotateY 1500ms infinite alternate ease-in-out 1000ms;
+  animation-iteration-count: 2;
+}
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(60deg);
+  }
 }
 
 .nav-section__site-nav {
@@ -386,6 +422,22 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #d41443;
+    animation: animate125 3000ms infinite 1000ms;
+    animation-iteration-count: 1;
+    @keyframes animate125 {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.25);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
     @media screen and (min-width: 1280px) {
       font-size: 46px;
       line-height: 1.15;
@@ -476,6 +528,7 @@
 
 .galochka--tablet {
   display: none;
+
   @media screen and (min-width: $tablet) {
     display: block;
     position: absolute;
