@@ -20,8 +20,6 @@
 
   &__box {
     min-width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     @media screen and (min-width: 480px) {
@@ -31,7 +29,7 @@
       width: 768px;
     }
     @media screen and (min-width: 1280px) {
-      width: 1280px;
+      width: 1080px;
     }
   }
   &__title {
@@ -153,16 +151,10 @@
       max-width: 330px;
     }
   }
-  &__card:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 20px;
-    }
+  &__card {
+    margin-bottom: 30px;
   }
-  &__card:last-child {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 54px;
-    }
-  }
+
   &__title-section {
     padding-top: 43px;
     padding-bottom: 25px;
