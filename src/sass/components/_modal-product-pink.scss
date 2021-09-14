@@ -9,14 +9,12 @@
   background-color: $products-card-first;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 20px;
+  width: 285px;
+  height: 400px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timer-function;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
-  }
-  @media screen and (max-width: 479px) {
-    width: 285px;
-    height: 400px;
   }
   @media screen and (min-width: 480px) {
     width: 380px;
