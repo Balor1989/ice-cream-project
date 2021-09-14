@@ -404,8 +404,12 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:479px){
+    font-size: 15px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+  @media screen and (min-width:480px) and (max-width: 767px) {
     font-size: 20px;
     line-height: 1.15;
     margin-bottom: 20px;
@@ -423,7 +427,11 @@
   text-transform: uppercase;
   color: $title-color-second;
   margin-right: 5px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:479px){
+    font-size: 10px;
+    line-height: 1.1;
+}
+  @media screen and (min-width:480px) and (max-width: 767px) {
     font-size: 15px;
     line-height: 1.15;
   }
@@ -442,7 +450,11 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: $primary-text-color;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:479px){
+    font-size: 13px;
+    line-height: 1.1;
+}
+  @media screen and (min-width:480px) and (max-width: 767px) {
     font-size: 14px;
     line-height: 1.5;
   }
@@ -467,7 +479,11 @@
   }
 }
 .form__image {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:479px){
+    height: 100px;
+    width: 100px;
+}
+  @media screen and (min-width:480px) and (max-width: 767px) {
     height: 152px;
     width: 149px;
   }
